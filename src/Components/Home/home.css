@@ -1,0 +1,37 @@
+.homePage-wrapper{
+    padding: 0;
+    margin-top: 0;
+    background-color: #36013f;
+    width: 1280px;
+    height: 996.41px;
+}
+.homePage-text{
+    padding-top: 10px;
+    margin-left: 85.33px;
+    width:790.67px;
+    height: 320px;
+    color: white;
+    text-align: left;
+}
+.homePage-text-one{
+    width: 141px;
+    height: 32px;
+    font-size: 17px;
+}
+.homePage-button{
+    width: 150.67px;
+    padding: 10px;
+    height:69.33px;
+    color:black;
+    font-size: 17px;
+    text-align: center;
+    background-color: #d7d005;
+    border-radius: 10px;
+    border: none;
+
+}
+.homePage-button:hover{
+    cursor: pointer;
+    background-color: #f5ee29;
+
+}

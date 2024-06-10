@@ -1,9 +1,9 @@
 .homePage-wrapper{
     padding: 0;
     margin-top: 0;
-    background-color: #36013f;
-    width: 1280px;
-    height: 996.41px;
+    background-color: #32004a;
+    max-width: 1280px;
+    height: 756.41px;
 }
 .homePage-text{
     padding-top: 10px;

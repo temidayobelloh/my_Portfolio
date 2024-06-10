@@ -1,0 +1,29 @@
+.services-wrapper{
+    color: white;
+    text-align: left;
+    height: 209px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #32004a;
+    padding: 55px;
+    margin-top: 0px;
+}
+.services-text{
+    text-align: center;
+    background-color: #32004a;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.services-box{
+    width:412px;
+    height: 232px;
+    background-color: #6d3f85;;
+    margin-left: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.services-box:hover{
+    background-color: #7e5196;
+}

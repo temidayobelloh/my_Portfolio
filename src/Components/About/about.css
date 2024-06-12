@@ -1,15 +1,19 @@
 .about-me-wrapper{
 background-color: #6d3f85;
-height: 366px;
+height: 550px;
+margin: 0;
+padding: 0;
+border: 1px solid black;
 }
 .about-me-text{
     text-align: center;
     color: white;
-    padding: 35px;
+    padding: 10px;
 }
 .about-me-intro{
     text-align: left;
     margin-left: 85.33px;
     color: white;
     font-size: 17px;
+    line-height: 30px;
 }

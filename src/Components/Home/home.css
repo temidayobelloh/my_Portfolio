@@ -3,35 +3,54 @@
     margin-top: 0;
     background-color: #32004a;
     max-width: 1280px;
-    height: 756.41px;
+    height: 550px;
+}
+.text-name{
+    color: #f5ee29;
+    font-size: 20px;
 }
 .homePage-text{
-    padding-top: 10px;
+    padding-top: 50px;
     margin-left: 85.33px;
     width:790.67px;
     height: 320px;
     color: white;
     text-align: left;
+    
+    
 }
 .homePage-text-one{
-    width: 141px;
+    margin-top: 80px;
+    width: 500px;
     height: 32px;
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+
 }
+.homePage-text-two{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 50px;
+
+}
+
 .homePage-button{
-    width: 150.67px;
+    width: 170.67px;
     padding: 10px;
     height:69.33px;
-    color:black;
-    font-size: 17px;
+    color:#252424;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 100%;
     text-align: center;
     background-color: #d7d005;
     border-radius: 10px;
-    border: none;
-
+    border: 1px solid black;
 }
 .homePage-button:hover{
     cursor: pointer;
     background-color: #f5ee29;
+    font-weight: 500px;
 
 }

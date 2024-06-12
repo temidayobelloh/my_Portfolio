@@ -6,15 +6,14 @@
     justify-content: space-between;
     align-items: center;
     background-color: #32004a;
-    padding: 55px;
-    margin-top: 0px;
+    padding: 45px;
 }
 .services-text{
     text-align: center;
     background-color: #32004a;
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 35px;
 }
 .services-box{
     width:412px;
@@ -23,6 +22,7 @@
     margin-left: 25px;
     border-radius: 10px;
     text-align: center;
+    padding: 12px;
 }
 .services-box:hover{
     background-color: #7e5196;

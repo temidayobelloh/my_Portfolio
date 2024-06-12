@@ -1,5 +1,5 @@
 .skills-wrapper{
-    height: 445px;
+    height: 550px;
     background-color: #32004a;
 }
 .skills-text{
@@ -23,8 +23,8 @@
     border: 8px solid #f3f3f3;
     border-radius:50px;
     border-top: 8px solid #3498db;
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 118px;
     animation: spin 5s linear infinite;
     
 }

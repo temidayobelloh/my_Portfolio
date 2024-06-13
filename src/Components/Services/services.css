@@ -1,19 +1,23 @@
 .services-wrapper{
     color: white;
     text-align: left;
-    height: 209px;
+    height: 550px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #32004a;
     padding: 45px;
 }
+.services-header{
+    color: #f5ee29;
+}
 .services-text{
     text-align: center;
     background-color: #32004a;
-    color: white;
+    color: #f5ee29;
     margin: 0;
-    padding: 35px;
+    padding: 25px;
+    border-bottom: 0px;
 }
 .services-box{
     width:412px;
@@ -22,7 +26,10 @@
     margin-left: 25px;
     border-radius: 10px;
     text-align: center;
-    padding: 12px;
+    padding: 9px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0;
 }
 .services-box:hover{
     background-color: #7e5196;

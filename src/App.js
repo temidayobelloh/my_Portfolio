@@ -12,15 +12,17 @@ const App = () =>{
     <p className='navbar-logo'>logo</p>
    <ul className='navbar-list'>
    <li className='navbar-list-item'><NavLink to='/' activeClassName='active-link' className='navlink' >Home</NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/about_me' activeClassName='active-link' className='navlink'>About Me </NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/my_skills'activeClassName='active-link' className='navlink'> My Skills </NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/contact_form' activeClassName='active-link' className='navlink'>Contact Form</NavLink></li>
+   <li className='navbar-list-item'><NavLink to='/about' activeClassName='active-link' className='navlink'>About </NavLink></li>
+   <li className='navbar-list-item'><NavLink to='/services'activeClassName='active-link' className='navlink'> Services </NavLink></li>
+   <li className='navbar-list-item'><NavLink to='/skills' activeClassName='active-link' className='navlink'>Skills</NavLink></li>
+   <li className='navbar-list-item'><NavLink to='/projects'activeClassName='active-link' className='navlink'> Projects </NavLink></li>
+   <li className='navbar-list-item'><NavLink to='/contact_form'activeClassName='active-link' className='navlink'> Contact </NavLink></li>
    </ul>
    </div>
    <Routes>
    <Route path="/" element ={<Home/>}/>
    <Route path="/about_me" element ={<About/>}/>
-   <Route path="/my_skills" element ={<Skills/>}/>
+   <Route path="/skills" element ={<Skills/>}/>
    <Route path="/services" element ={<Services/>}/>
    </Routes>
    </BrowserRouter>

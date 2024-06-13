@@ -1,6 +1,6 @@
 .footer-wrapper{
     background-color: #6d3f85;
-    height: 66px;
+    height: 76px;
     padding: 0px;
     color: white;
     text-align: center;
@@ -11,4 +11,18 @@
     margin: 0;
     padding: 0;
     border: 0;
+}
+.exit-Btn{
+    padding: 7px;
+    margin-top: 8px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+.exit-Btn:hover{
+    cursor: pointer;
+    color: rgba(251, 255, 8, 0.678);
 }

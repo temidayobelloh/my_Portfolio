@@ -1,0 +1,31 @@
+.project-wrapper{
+    height: 550px;
+    background-color: #32004a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project-header{
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    background-color: #32004a;
+    color: #f5ee29;
+}
+.project-card{
+    border-radius: 15px;
+    margin: 35px;
+    padding: 80px;
+    width: 710px;
+    height: 238px;
+    background-color: #6d3f85;
+    padding: 10px;
+    border: 1px solid white;
+}
+.project-card:hover{
+    cursor: pointer;
+    background-color: #7e5196;
+}

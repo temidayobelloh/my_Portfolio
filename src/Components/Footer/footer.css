@@ -1,5 +1,5 @@
 .footer-wrapper{
-    background-color: #6d3f85;
+    background-color: #32004a;
     height: 76px;
     padding: 0px;
     color: white;
@@ -16,13 +16,13 @@
     padding: 7px;
     margin-top: 8px;
     text-align: center;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(173, 173, 173);
+    color: black;
     font-size: 15px;
     border-radius: 9px;
     border: 1px solid black;
 }
 .exit-Btn:hover{
     cursor: pointer;
-    color: rgba(251, 255, 8, 0.678);
+    color: #6d3f85;
 }

@@ -4,12 +4,13 @@ height: 550px;
 margin: 0;
 padding: 0;
 border: 1px solid black;
-border-radius: 25px;
 }
 .about-me-text{
-    text-align: center;
+    text-align: left;
     color: #f5ee29;
     padding: 10px;
+    margin-left: 270px;
+    margin-top: 40px;
 }
 .about-me-intro{
     text-align: left;
@@ -17,4 +18,26 @@ border-radius: 25px;
     color: white;
     font-size: 17px;
     line-height: 30px;
+    max-width: 610px;
+    text-indent: 50px;
+    margin-top: 0;
+}
+.indented{
+    margin: 0;
+    padding: 0;
+    text-indent: 50px;
+    color: white;
+    line-height: 38px;
+    max-width: 610px;
+    font-size: 17px;
+    text-align: left;
+    margin-left: 85.33px;
+
+}
+.indented-color{
+    color: yellow;
+    font-style: italic;
+}
+.indented-color:hover{
+    cursor: pointer;
 }

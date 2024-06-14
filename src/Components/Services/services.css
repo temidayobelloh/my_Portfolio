@@ -1,12 +1,13 @@
 .services-wrapper{
     color: white;
     text-align: left;
-    height: 550px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #32004a;
-    padding: 45px;
+    padding: 0px;
+    margin: 0;
 }
 .services-header{
     color: #f5ee29;
@@ -16,20 +17,20 @@
     background-color: #32004a;
     color: #f5ee29;
     margin: 0;
-    padding: 25px;
-    border-bottom: 0px;
+    padding-top: 50px;
 }
 .services-box{
     width:412px;
     height: 232px;
     background-color: #6d3f85;;
-    margin-left: 25px;
+    margin-left:25px;
+    margin-right: 25px;
     border-radius: 10px;
     text-align: center;
     padding: 9px;
     font-size: 14px;
     text-align: center;
-    margin-top: 0;
+
 }
 .services-box:hover{
     background-color: #7e5196;

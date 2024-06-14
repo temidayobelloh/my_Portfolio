@@ -1,9 +1,11 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import Home from './Components/Home/home';
 import About from './Components/About/about';
 import Skills from './Components/MySkills/skills';
 import Services from './Components/Services/services';
+import Projects from './Components/Projects/projects';
+import Contact from './Components/Contact/contact';
 
 const App = () =>{
     return(
@@ -11,19 +13,21 @@ const App = () =>{
    <div className='navbar-wrapper'>
     <p className='navbar-logo'>logo</p>
    <ul className='navbar-list'>
-   <li className='navbar-list-item'><NavLink to='/' activeClassName='active-link' className='navlink' >Home</NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/about' activeClassName='active-link' className='navlink'>About </NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/services'activeClassName='active-link' className='navlink'> Services </NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/skills' activeClassName='active-link' className='navlink'>Skills</NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/projects'activeClassName='active-link' className='navlink'> Projects </NavLink></li>
-   <li className='navbar-list-item'><NavLink to='/contact_form'activeClassName='active-link' className='navlink'> Contact </NavLink></li>
+   <li className='navbar-list-item'><Link to='/' activeClassName='active-link' className='navlink'>Home</Link></li>
+   <li className='navbar-list-item'><Link to='/about' activeClassName='active-link' className='navlink'>About </Link></li>
+   <li className='navbar-list-item'><Link to='/services' activeClassName='active-link' className='navlink'> Services </Link></li>
+   <li className='navbar-list-item'><Link to='/skills'activeClassName='active-link' className='navlink'>Skills</Link></li>
+   <li className='navbar-list-item'><Link to='/projects' activeClassName='active-link' className='navlink'> Projects </Link></li>
+   <li className='navbar-list-item'><Link to='/contact_form'activeClassName='active-link' className='navlink'> Contact </Link></li>
    </ul>
    </div>
    <Routes>
-   <Route path="/" element ={<Home/>}/>
-   <Route path="/about_me" element ={<About/>}/>
-   <Route path="/skills" element ={<Skills/>}/>
-   <Route path="/services" element ={<Services/>}/>
+    <Route path="/" element ={<Home/>}/>
+    <Route path="/about" element ={<About/>}/>
+    <Route path="/skills" element ={<Skills/>}/>
+    <Route path="/services" element ={<Services/>}/>
+    <Route path="/projects" element ={<Projects/>}/>
+    <Route path="/contact" element ={<Contact/>}/>
    </Routes>
    </BrowserRouter>
     )

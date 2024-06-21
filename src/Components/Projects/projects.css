@@ -3,7 +3,7 @@
     background-color: #32004a;
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 85px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 .project-card{
     border-radius: 15px;
-    margin: 35px;
+    margin: 10px;
     padding: 80px;
     width: 710px;
     height: 238px;

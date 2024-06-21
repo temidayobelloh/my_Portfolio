@@ -1,12 +1,5 @@
 import './home.css';
-import About from '../About/about';
-import Skills from '../MySkills/skills';
-import Footer from '../Footer/footer';
 import DownloadcvButton from '../DownloadCVButton/downloadcvButton';
-import Services from '../Services/services';
-import Projects from '../Projects/projects';
-import Contact from '../Contact/contact';
-
 
 const Home = () => {
   return (
@@ -21,12 +14,6 @@ const Home = () => {
     </div>
     </div>
     </div>
-    <About/>
-    <Services/>
-    <Skills/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
     </div>
   )
 }

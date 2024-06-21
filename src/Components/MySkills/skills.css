@@ -2,14 +2,14 @@
     height: 600px;
     background-color: #6d3f85;
     margin: 0;
-    padding: 0;
+    padding: 85px;
 }
 .skills-text{
     margin: 0;
     text-align: center;
     color: #f5ee29;
     background-color: #6d3f85;
-    padding: 50px;
+    padding: 0px;
 }
 .loader-wrapper{
     background-color: #6d3f85;
@@ -20,7 +20,7 @@
     padding: 60px;
 }
 .loader{
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
     border: 8px solid #f3f3f3;
     border-radius:50px;

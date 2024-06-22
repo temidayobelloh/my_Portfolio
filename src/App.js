@@ -9,6 +9,8 @@ import Contact from './Components/Contact/contact';
 import Navbar from './Components/Navbar/navbar';
 
 const App = () =>{
+    
+
     return(
    <BrowserRouter>
    <Navbar/>

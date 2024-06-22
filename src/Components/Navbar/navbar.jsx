@@ -1,8 +1,9 @@
 import {Link} from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
   return (
-    <div className='navbar-wrapper'>
+    <div className='navbar-wrapper' id='sticky'>
     <p className='navbar-logo'>logo</p>
    <ul className='navbar-list'>
    <li className='navbar-list-item'><Link to='/' activeClassName='active-link' className='navlink'>Home</Link></li>

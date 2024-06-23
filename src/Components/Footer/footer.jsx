@@ -1,8 +1,11 @@
 import './footer.css';
 
 
-const handleButton =()=>{
-  window.location.href = '/';
+const handleButton = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 };
 
 const Footer = () => {

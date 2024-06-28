@@ -1,34 +1,43 @@
 .skills-wrapper{
     height: 600px;
-    background-color: #6d3f85;
+    background-color: #787ebe;
     margin: 0;
     padding: 85px;
+    box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
 }
 .skills-text{
     margin: 0;
     text-align: center;
-    color: #f5ee29;
-    background-color: #6d3f85;
+    font-weight: bolder;
+    color: #ffa7a6;
+    background-color: #787ebe;
     padding: 0px;
+    padding-bottom: 45px;
 }
 .loader-wrapper{
-    background-color: #6d3f85;
+    background-color: #787ebe;
     color: white;
     display: flex;
     align-self: center;
     justify-content: space-around;
     padding: 60px;
+    margin: 1px solid black;
 }
 .loader{
     margin-top: 0px;
     text-align: center;
-    border: 8px solid #f3f3f3;
+    border: 8px solid #fff9f9;
     border-radius:50px;
-    border-top: 8px solid #3498db;
+    border-top: 8px solid #2ea5f9;
     width: 110px;
     height: 118px;
     animation: spin 5s linear infinite;
+    margin-left: 45px;
+    margin-right: 45px;
     
+}
+.loader:hover{
+    cursor: pointer;
 }
 @keyframes spin {
     80% { transform: rotate(10deg); }

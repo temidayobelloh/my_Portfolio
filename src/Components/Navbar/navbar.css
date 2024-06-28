@@ -3,7 +3,15 @@
     top:0;
     z-index: 1000;
 }
-
+.portfolio-logo{
+  margin-left: 85.33px;
+  width: 30px;
+  transition: transform 0.3s;
+}
+.portfolio-logo:hover{
+  cursor: pointer;
+  transform: scale(1.3);
+}
 .navbar-wrapper{
     display: flex;
       justify-content: space-between;
@@ -11,21 +19,20 @@
       padding: 0;
       max-width: 1280px;
       height:48px;
-      background-color: #32004a;
-      border-bottom: 1px solid #6d3f85;
+      background-color: #787ebe;
       border-top-left-radius: 3px;
-      border-top-right-radius: 3px
+      border-top-right-radius: 3px;
+      box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
   }
   .navbar-logo{
-    color: rgb(255, 255, 58);
     width: 89px;
     height: 24px;
     font-size: 17px;
     margin-left: 85.33px;
+    margin-right: 80px;
   }
   .navbar-logo:hover{
     cursor: pointer;
-  
   }
   .active-link{
     color: white;
@@ -47,8 +54,7 @@
   }
   .navbar-list-item :active{
     margin-left: 10px;
-    color: yellow;
-    background-color: #6d3f85;
+    color: #ff9899;
   }
   .navbar-list-item:hover{
     cursor: pointer;

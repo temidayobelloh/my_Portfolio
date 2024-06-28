@@ -22,8 +22,6 @@ const App = () =>{
         window.scrollTo({ top: elementRef.current.offsetTop, 
             behavior: 'smooth',})
     };
-
-
     return(
    <BrowserRouter>
    <Navbar scrollToSection={scrollToSection}
@@ -33,7 +31,7 @@ const App = () =>{
                 skillsRef={skills}
                 projectsRef={projects}
                 contactRef={contact}/>
-   <div ref={home}><Home /></div>
+            <div ref={home}><Home /></div>
             <div ref={about}><About /></div>
             <div ref={services}><Services /></div>
             <div ref={skills}><Skills /></div>

@@ -1,5 +1,6 @@
 import './home.css';
 import DownloadcvButton from '../DownloadCVButton/downloadcvButton';
+import homeLogo from '../assets/girl-sitting-on-armchair-with-laptop-by-oblik-studio.svg';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
     <button className='homePage-button'>View Projects</button>
     </div>
     </div>
+    <div> <img  className='home-logo'src={homeLogo} alt='homePage-logo'/> </div>
     </div>
     </div>
   )

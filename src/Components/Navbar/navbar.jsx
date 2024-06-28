@@ -1,10 +1,11 @@
 import {Link} from 'react-router-dom';
+import logo from '../assets/developer_mode_tv_24dp_FILL0_wght400_GRAD0_opsz24 (2).svg';
 import './navbar.css';
 
 const Navbar = ({ scrollToSection, homeRef, aboutRef, servicesRef, skillsRef, projectsRef, contactRef }) => {
   return (
     <div className='navbar-wrapper' id='sticky'>
-    <p className='navbar-logo'>logo</p>
+    <img className='portfolio-logo' src={logo} alt="logo"/>
    <ul className='navbar-list'>
    <li onClick={() => scrollToSection(homeRef)}className='navbar-list-item'><Link to='/' activeClassName='active-link' className='navlink'>Home</Link></li>
    <li onClick={() => scrollToSection(aboutRef)}className='navbar-list-item'><Link to='/about' activeClassName='active-link' className='navlink'>About </Link></li>

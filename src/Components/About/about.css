@@ -1,16 +1,25 @@
 .about-me-wrapper{
-background-color: #6d3f85;
+background-color: #787ebe;
 height: 600px;
 margin: 0;
 padding: 0;
-border: 1px solid black;
+border: none;
+display: flex;
+box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
 }
 .about-me-text{
     text-align: left;
-    color: #f5ee29;
+    color: #ffa7a6;
     padding: 10px;
     margin-left: 270px;
     margin-top: 40px;
+    font-weight: bolder;
+}
+.about-me-logo{
+    width: 350px;
+    height: 360px;
+    margin-left: 80px;
+    margin-top: 100px;
 }
 .about-me-intro{
     text-align: left;
@@ -35,9 +44,12 @@ border: 1px solid black;
 
 }
 .indented-color{
-    color: yellow;
+    color:  #ffa7a6;
     font-style: italic;
+    transition: transform 0.3s;
+    display: inline-block;
 }
 .indented-color:hover{
+    transform: scale(1.4);
     cursor: pointer;
 }

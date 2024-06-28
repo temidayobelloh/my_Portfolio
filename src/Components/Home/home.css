@@ -1,20 +1,23 @@
 .homePage-wrapper{
     padding: 0;
     margin-top: 0;
-    background-color: #32004a;
+    background-color: rgb(224, 233, 240);
     max-width: 1280px;
     height: 600px;
+    display: flex;
+    justify-content: space-between;
 }
 .text-name{
-    color: #f5ee29;
+    color: #f78b7b;
     font-size: 30px;
+    font-weight: bolder;
 }
 .homePage-text{
     padding-top: 40px;
     margin-left: 85.33px;
     width:790.67px;
     height: 320px;
-    color: white;
+    color: black;
     text-align: left;
     
 }
@@ -28,25 +31,26 @@
 }
 .homePage-text-two{
     font-size: 18px;
-    margin-top: 35px;
+    margin-top: 15px;
     margin-bottom: 30px;
     line-height: 30px;
-
+    width: 550px;
 }
 
 .homePage-button{
-    max-width: 170.67px;
+    max-width: 150.67px;
     padding: 10px;
     height:69.33px;
-    color:#252424;
+    color: rgb(51, 49, 49);
     font-family: Poppins;
     font-size: 18px;
     font-weight: 100%;
     text-align: center;
-    background-color: #f5ee29;
+    background-color:#ff9899;
     border-radius: 15px;
-    border: 2px solid #d7d005;
+    border: 2px solid #ff9899;
     margin-right: 35px;
+    transition: transform 0.3s;
 }
 .button-wrapper{
     display: flex;
@@ -56,7 +60,13 @@
 }
 .homePage-button:hover{
     cursor: pointer;
-    background-color: rgb(251, 255, 13);
+    background-color: #ff9899;
     font-weight: 500px;
-
+    transform: scale(1.1);
+}
+.home-logo{
+    width: 350px;
+    height: 360px;
+    margin-right: 115.33px;
+    margin-top: 115px;
 }

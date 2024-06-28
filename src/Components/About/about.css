@@ -15,6 +15,9 @@ box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
     margin-top: 40px;
     font-weight: bolder;
 }
+span{
+    color: #ffa7a6;
+}
 .about-me-logo{
     width: 350px;
     height: 360px;

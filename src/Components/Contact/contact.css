@@ -2,4 +2,32 @@
     background-color: #787ebe;
     height: 600px;
     color: white;
+    margin-top: 0;
+    padding: 0;
+    display: flex;
+}
+.contact-header{
+    color: #ffa7a6;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 0px;
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 85.33px;
+}
+.contact-intro{
+    margin-left: 85.33px;
+    width: 526px;
+    height: 47px;
+    line-height: 35px;
+    font-size: 15px;
+}
+.break{
+    margin-top: 15px;
+}
+.form-content{
+    display: block !important;
+    width: 328px;
+    height: 450px;
 }

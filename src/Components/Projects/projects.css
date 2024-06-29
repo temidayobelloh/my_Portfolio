@@ -1,6 +1,6 @@
 .project-wrapper{
     height: 600px;
-    background-color:  rgb(224, 233, 240);
+    background-color: whitesmoke;
     color: white;
     margin: 0;
     padding: 85px;
@@ -11,7 +11,7 @@
     padding-top: 60px;
     margin: 0;
     text-align: center;
-    background-color:  rgb(224, 233, 240);
+    background-color: whitesmoke;
     color: #f78b7b;
     font-weight: bolder;
 }

@@ -12,7 +12,7 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, servicesRef, skillsRef, pr
    <li onClick={() => scrollToSection(servicesRef)}className='navbar-list-item'><Link to='/services' activeClassName='active-link' className='navlink'> Services </Link></li>
    <li onClick={() => scrollToSection(skillsRef)}className='navbar-list-item'><Link to='/skills'activeClassName='active-link' className='navlink'>Skills</Link></li>
    <li onClick={() => scrollToSection(projectsRef)}className='navbar-list-item'><Link to='/projects' activeClassName='active-link' className='navlink'> Projects </Link></li>
-   <li onClick={() => scrollToSection(contactRef)}className='navbar-list-item'><Link to='/contact'activeClassName='active-link' className='navlink'> Contact </Link></li>
+   <li onClick={() => scrollToSection(contactRef)}className='navbar-list-item'><Link to='/connect'activeClassName='active-link' className='navlink'> Connect</Link></li>
    </ul>
    </div>
   )

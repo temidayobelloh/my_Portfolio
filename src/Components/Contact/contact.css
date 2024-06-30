@@ -26,8 +26,38 @@
 .break{
     margin-top: 15px;
 }
-.form-content{
-    display: block !important;
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 328px;
     height: 450px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+label {
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+#contact-button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ffa7a6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#contact-button:hover{
+    background-color: #ff6b6b;
 }

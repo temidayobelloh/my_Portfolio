@@ -1,23 +1,50 @@
 .footer-wrapper{
     background-color: whitesmoke;
-    height: 96px;
+    height: 175px;
     padding: 0px;
     color: black;
     text-align: center;
     margin: 0;
     border: none;
     box-shadow: 0 2px 4px rgba(228, 232, 234, 0.8);
+    margin-top: 0px;
+}
+.footer-content{
+    margin-left: 85px;
+}
+.contact-me-header{
+    margin-bottom: 2px;
+    margin-top: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+}
+.contact-item {
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+    padding: 0;
+    display: inline;
+}
+.contact-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
 }
 .copyright-text{
     margin: 0;
     padding: 0;
     border: 0;
-    padding: 5px;
+    padding: 1px;
     color:  rgb(51, 49, 49);
 }
 .exit-Btn{
     padding: 7px;
-    margin-top: 8px;
+    margin-top: 3px;
     text-align: center;
     background-color: #ff9899;
     color: rgb(51, 49, 49);
@@ -30,4 +57,9 @@
 .exit-Btn:hover{
     cursor: pointer;
     color: #6d3f85;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 24px;
 }

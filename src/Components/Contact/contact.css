@@ -1,6 +1,6 @@
 .contact-info-wrapper{
     background-color: #787ebe;
-    height: 600px;
+    height: 590px;
     color: white;
     margin-top: 0;
     padding: 0;
@@ -22,6 +22,7 @@
     height: 47px;
     line-height: 35px;
     font-size: 15px;
+    margin-right: 40px;
 }
 .break{
     margin-top: 15px;
@@ -34,7 +35,7 @@
     height: 450px;
     margin: 0 auto;
     margin-top: 60px;
-    margin-left: 150px;
+    margin-left: 80px;
 }
 
 label {
@@ -61,3 +62,11 @@ input, textarea {
 #contact-button:hover{
     background-color: #ff6b6b;
 }
+.vertical-line {
+    margin-top: 60px;
+    width: 2px;
+    height: 450px;
+    background-color: #ff9899;
+    padding: 0;
+  }
+  

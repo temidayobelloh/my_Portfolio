@@ -35,7 +35,7 @@ const App = () =>{
             <div ref={about}><About /></div>
             <div ref={services}><Services /></div>
             <div ref={skills}><Skills /></div>
-            <div ref={projects}><Projects /></div>
+            <div ref={projects}><Projects/> </div>
             <div ref={contact}><Contact /></div>
    <Footer/>
    </BrowserRouter>

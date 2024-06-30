@@ -3,6 +3,7 @@ import email from '../assets/email-logo.svg';
 import location from '../assets/location-logo.svg';
 import linkedin from '../assets/icons8-linkedin.svg';
 import github from '../assets/icons8-github.svg';
+import contactInfo from '../assets/contact-logo.svg';
 
 const handleButton = () => {
   window.scrollTo({
@@ -15,7 +16,7 @@ const Footer = () => {
   return (
     <div className='footer-wrapper'>
       <div className='footer-content'>
-        <h3 className='contact-me-header'>Contact Me</h3>
+        <h3 className='contact-me-header'>Contact Me <img src={contactInfo} alt="contact-info"/> </h3>
         <p className='contact-item'>
           <img className="logo" src={email} alt= "email-icon"/> <a href="mailto:temidayobelloh@gmail.com">temidayobelloh@gmail.com</a>
         </p>

@@ -3,7 +3,7 @@
     margin-top: 0;
     background-color: whitesmoke;
     max-width: 1280px;
-    height: 600px;
+    height: 590px;
     display: flex;
     justify-content: space-between;
 }
@@ -52,6 +52,26 @@
     margin-right: 35px;
     transition: transform 0.3s;
 }
+.viewProject-button{
+    max-width: 150.67px;
+    padding: 10px;
+    height:69.33px;
+    color: #ff9899;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 100%;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #ff9899;
+    margin-right: 35px;
+    transition: transform 0.3s;
+    background-color: transparent;
+}
+.viewProject-button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transform: scale(1.1);
+}
 .button-wrapper{
     display: flex;
     align-items: center;
@@ -67,6 +87,6 @@
 .home-logo{
     width: 350px;
     height: 360px;
-    margin-right: 115.33px;
-    margin-top: 115px;
+    margin-right: 140.33px;
+    margin-top: 98px;
 }

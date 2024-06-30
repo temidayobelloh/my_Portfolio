@@ -6,6 +6,7 @@
     padding: 85px;
     display: flex;
     align-items: center;
+    padding-top: 0px;
 }
 .project-header{
     padding-top: 60px;

@@ -9,6 +9,7 @@ import Contact from './Components/Contact/contact';
 import Navbar from './Components/Navbar/navbar';
 import Footer from './Components/Footer/footer';
 import {useRef} from 'react';
+import BackToTopButton from './Components/BackToTopButton/BackToTopButton';
 
 const App = () =>{
     const home = useRef(null);
@@ -24,6 +25,7 @@ const App = () =>{
     };
     return(
    <BrowserRouter>
+   <BackToTopButton/>
    <Navbar scrollToSection={scrollToSection}
                 homeRef={home}
                 aboutRef={about}

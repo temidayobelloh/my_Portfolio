@@ -29,7 +29,7 @@
     height: 24px;
     font-size: 17px;
     margin-left: 85.33px;
-    margin-right: 80px;
+    margin-right: 200px;
   }
   .navbar-logo:hover{
     cursor: pointer;
@@ -59,6 +59,7 @@
   .navbar-list-item:hover{
     cursor: pointer;
     color:#ff9899;
+    border-bottom: 2px solid #ff9899;
   }
   
   

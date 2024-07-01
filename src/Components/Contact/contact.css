@@ -58,6 +58,7 @@ input, textarea {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
 }
 #contact-button:hover{
     background-color: #ff6b6b;

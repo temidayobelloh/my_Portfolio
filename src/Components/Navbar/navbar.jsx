@@ -19,3 +19,4 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, servicesRef, skillsRef, pr
 }
 
 export default Navbar;
+

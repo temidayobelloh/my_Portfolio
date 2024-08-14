@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import logo from '../assets/developer_mode_tv_24dp_FILL0_wght400_GRAD0_opsz24 (2).svg';
+import logo from '../assets/dev_mode_tv.svg';
 import './navbar.css';
 
 const Navbar = ({ scrollToSection, homeRef, aboutRef, servicesRef, skillsRef, projectsRef, contactRef }) => {

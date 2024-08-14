@@ -1,92 +1,213 @@
-.homePage-wrapper{
-    padding: 0;
-    margin-top: 0;
-    background-color: whitesmoke;
-    max-width: 1280px;
-    height: 590px;
-    display: flex;
-    justify-content: space-between;
-}
-.text-name{
-    color: #f78b7b;
-    font-size: 30px;
-    font-weight: bolder;
-}
-.homePage-text{
-    padding-top: 40px;
-    margin-left: 85.33px;
-    width:790.67px;
-    height: 320px;
-    color: black;
-    text-align: left;
-    
-}
-.homePage-text-one{
-    margin-top: 80px;
-    width: 500px;
-    height: 32px;
-    line-height: 30px;
-    margin-bottom: 20px;
-    font-size: 30px;
-}
-.homePage-text-two{
-    font-size: 19px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    line-height: 30px;
-    width: 550px;
-}
-
-.homePage-button{
-    max-width: 150.67px;
-    padding: 10px;
-    height:69.33px;
-    color: rgb(51, 49, 49);
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 100%;
-    text-align: center;
-    background-color:#ff9899;
-    border-radius: 15px;
-    border: 2px solid #ff9899;
-    margin-right: 35px;
-    transition: transform 0.3s;
-}
-.viewProject-button{
-    max-width: 150.67px;
-    padding: 10px;
-    height:69.33px;
-    color: #ff9899;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 100%;
-    text-align: center;
-    border-radius: 15px;
-    border: 2px solid #ff9899;
-    margin-right: 35px;
-    transition: transform 0.3s;
-    background-color: transparent;
-}
-.viewProject-button:hover{
-    cursor: pointer;
-    background-color: transparent;
-    transform: scale(1.1);
-}
-.button-wrapper{
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-.homePage-button:hover{
-    cursor: pointer;
-    background-color: #ff9899;
-    font-weight: 500px;
-    transform: scale(1.1);
-}
-.home-logo{
-    width: 350px;
-    height: 360px;
-    margin-right: 140.33px;
-    margin-top: 98px;
-}
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+  }
+  
+  .animate {
+    opacity: 1;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Your existing styles */
+  .homePage-wrapper {
+      padding: 0;
+      margin-top: 0;
+      background-color: white;
+      max-width: 1440px;
+      height: 590px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .text-name {
+      color: #ff7f80;
+      font-size: 30px;
+      font-weight: bolder;
+  }
+  
+  .homePage-text {
+      padding-top: 40px;
+      margin-left: 85.33px;
+      width: 790.67px;
+      height: 320px;
+      color: black;
+      text-align: left;
+  }
+  
+  .homePage-text-one {
+      margin-top: 80px;
+      width: 500px;
+      height: 32px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: 400;
+  }
+  
+  .homePage-text-two {
+      font-size: 19px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      line-height: 30px;
+      width: 550px;
+  }
+  
+  .homePage-button {
+      max-width: 150.67px;
+      padding: 13px;
+      height: 69.33px;
+      color: white;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 100%;
+      text-align: center;
+      background-color: #ff7f80;
+      border-radius: 15px;
+      border: 1px solid #ff7172;
+      margin-right: 35px;
+      transition: transform 0.3s;
+  }
+  
+  .viewProject-button {
+      max-width: 150.67px;
+      padding: 10px;
+      height: 69.33px;
+      color: #ffa7a6;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 100%;
+      text-align: center;
+      border-radius: 15px;
+      border: 2px solid #ffa7a6;
+      margin-right: 35px;
+      transition: transform 0.3s;
+      background-color: transparent;
+  }
+  
+  .viewProject-button:hover {
+      cursor: pointer;
+      background-color: transparent;
+      transform: scale(1.1);
+  }
+  
+  .button-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .homePage-button:hover {
+      cursor: pointer;
+      background-color: #ff9899;
+      font-weight: 500;
+      transform: scale(1.1);
+  }
+  
+  .home-logo {
+      width: 350px;
+      height: 360px;
+      margin-right: 140.33px;
+      margin-top: 98px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+      .homePage-wrapper {
+          height: auto;
+          padding: 10px 10px;
+          align-items: center;
+      }
+      .home-logo {
+          width: 200px;
+          height: auto;
+          margin: 10px 0; 
+      }
+      .homePage-text {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+          margin-left: 0; 
+      }
+      .homePage-text-one {
+          margin-top: 10px;
+          font-size: 20px !important;
+          margin-left: 10px !important;
+      }
+      .text-name {
+          font-size: 20px !important;
+      }
+      .homePage-text-two {
+          max-width: 370px;
+          height: auto;
+          text-align: left;
+          font-size: 12px !important;
+          margin-left: 50px !important; 
+      }
+      .homePage-button, .viewProject-button {
+          max-width: 100%;
+          margin-right: 2px;
+          margin-bottom: 10px;
+          height: 48px;
+          margin-left: 40px;
+          font-size: 14px !important;
+          margin-top: 0px;
+      }
+  }
+  
+  @media (max-width: 390px) {
+      .homePage-wrapper {
+          align-items: center; 
+          padding: 0px; 
+      }
+  
+      .home-logo {
+          display: none;
+      }
+  
+      .homePage-text {
+          width: 100%;
+          text-align: left; 
+          margin-bottom: 20px; 
+          padding: 0; 
+          margin-left: 0px !important;
+      }
+  
+      .homePage-text-one {
+          margin-top: 10px; 
+          font-size: 12px !important;
+          margin-left: 10px !important;
+      }
+  
+      .text-name {
+          font-size: 13px !important; 
+          margin: 0; 
+      }
+  
+      .homePage-text-two {
+          text-align: left;
+          font-size: 10px !important; 
+          margin-left: 10px !important;
+      }
+  
+      .homePage-button, .viewProject-button {
+          height: 50px; 
+          font-size: 12px !important;
+          margin: 8px 0; 
+          padding: 5px 5px;
+          box-sizing: border-box; 
+      }
+  }
+  

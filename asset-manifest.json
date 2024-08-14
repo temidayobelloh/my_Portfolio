@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.674e5059.css",
-    "main.js": "/my_portfolio/static/js/main.3c70ab03.js",
-    "static/js/453.acca0757.chunk.js": "/my_portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.svg": "/my_portfolio/static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.dee6ebaedc3499889734f6f0b7cb2e84.svg",
-    "static/media/desktop-video-chat-coffee-by-oblik-studio.svg": "/my_portfolio/static/media/desktop-video-chat-coffee-by-oblik-studio.4c6070b5779c6798fd658050b1c6347f.svg",
-    "static/media/icons8-github.svg": "/my_portfolio/static/media/icons8-github.8bb4c34daff2cc13a91e392a34e723df.svg",
-    "static/media/icons8-linkedin.svg": "/my_portfolio/static/media/icons8-linkedin.d667f2a8dc25f009ba6c5e8d774bf4df.svg",
-    "index.html": "/my_portfolio/index.html",
-    "static/media/arrow-right.svg": "/my_portfolio/static/media/arrow-right.137d5d64ff1a29da8e227c418d4898ec.svg",
-    "static/media/developer-mode-icon.svg": "/my_portfolio/static/media/developer-mode-icon.ae066e2b0f06175eccccd79256dcda64.svg",
-    "static/media/location-logo.svg": "/my_portfolio/static/media/location-logo.13fcaabbc1005006c9912fbb471864ca.svg",
-    "static/media/dev_mode_tv.svg": "/my_portfolio/static/media/dev_mode_tv.06c34ccc955546678dbf995af3dcddab.svg",
-    "static/media/code-block.svg": "/my_portfolio/static/media/code-block.07ba3b0e4664543912f2af1555730902.svg",
-    "static/media/email-logo.svg": "/my_portfolio/static/media/email-logo.24b8696346b3e2627b25f44e024e09e0.svg",
-    "static/media/responsive-logo.svg": "/my_portfolio/static/media/responsive-logo.65c3e903dac20a00fe66d174425af96d.svg",
-    "main.674e5059.css.map": "/my_portfolio/static/css/main.674e5059.css.map",
-    "main.3c70ab03.js.map": "/my_portfolio/static/js/main.3c70ab03.js.map",
-    "453.acca0757.chunk.js.map": "/my_portfolio/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/my_Portfolio/static/css/main.674e5059.css",
+    "main.js": "/my_Portfolio/static/js/main.a02c8593.js",
+    "static/js/453.acca0757.chunk.js": "/my_Portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.svg": "/my_Portfolio/static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.dee6ebaedc3499889734f6f0b7cb2e84.svg",
+    "static/media/desktop-video-chat-coffee-by-oblik-studio.svg": "/my_Portfolio/static/media/desktop-video-chat-coffee-by-oblik-studio.4c6070b5779c6798fd658050b1c6347f.svg",
+    "static/media/icons8-github.svg": "/my_Portfolio/static/media/icons8-github.8bb4c34daff2cc13a91e392a34e723df.svg",
+    "static/media/icons8-linkedin.svg": "/my_Portfolio/static/media/icons8-linkedin.d667f2a8dc25f009ba6c5e8d774bf4df.svg",
+    "index.html": "/my_Portfolio/index.html",
+    "static/media/arrow-right.svg": "/my_Portfolio/static/media/arrow-right.137d5d64ff1a29da8e227c418d4898ec.svg",
+    "static/media/developer-mode-icon.svg": "/my_Portfolio/static/media/developer-mode-icon.ae066e2b0f06175eccccd79256dcda64.svg",
+    "static/media/location-logo.svg": "/my_Portfolio/static/media/location-logo.13fcaabbc1005006c9912fbb471864ca.svg",
+    "static/media/dev_mode_tv.svg": "/my_Portfolio/static/media/dev_mode_tv.06c34ccc955546678dbf995af3dcddab.svg",
+    "static/media/code-block.svg": "/my_Portfolio/static/media/code-block.07ba3b0e4664543912f2af1555730902.svg",
+    "static/media/email-logo.svg": "/my_Portfolio/static/media/email-logo.24b8696346b3e2627b25f44e024e09e0.svg",
+    "static/media/responsive-logo.svg": "/my_Portfolio/static/media/responsive-logo.65c3e903dac20a00fe66d174425af96d.svg",
+    "main.674e5059.css.map": "/my_Portfolio/static/css/main.674e5059.css.map",
+    "main.a02c8593.js.map": "/my_Portfolio/static/js/main.a02c8593.js.map",
+    "453.acca0757.chunk.js.map": "/my_Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.674e5059.css",
-    "static/js/main.3c70ab03.js"
+    "static/js/main.a02c8593.js"
   ]
 }

@@ -14,6 +14,7 @@
     padding: 0px;
     padding-bottom: 45px;
     font:100px;
+    font-weight: bold;
 }
 .loader-wrapper{
     background-color: #787ebe;
@@ -47,13 +48,14 @@
   @media (max-width: 768px) {
     .skills-wrapper {
         padding: 20px; 
-        height: 500px; 
+        height: 450px; 
         box-sizing: border-box; 
     }
 
     .skills-text {
-        font-size: 17px; 
-        padding-bottom: 20px; 
+        font-size: 17px;
+        margin-top: 35px !important ; 
+        margin-bottom: 15px !important;
         margin: 0; 
     }
 

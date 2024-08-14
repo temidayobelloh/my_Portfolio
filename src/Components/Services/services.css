@@ -7,29 +7,31 @@
     color: white;
     text-align: left;
     max-width: 1440px;
+    height: 550px;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping */
-    justify-content: space-around; /* Space boxes evenly */
-    align-items: center; /* Center align items vertically */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
     background-color: white;
     padding: 50px;
-    margin: 0 auto; /* Center wrapper */
+    margin: 0 auto; 
 }
 
 .services-header {
     color: #ffa7a6;
     margin-top: 20px;
     text-decoration: underline;
-    text-shadow: #ffa7a6;
+    font-weight: bold;
+    text-align: center;
 }
 
 .services-text {
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
     background-color: white;
     color: #ff7f80;
     margin: 0;
-    padding-top: 55px;
+    padding-top: 35px;
     display: block;
     max-width: 1440px;
 }
@@ -41,54 +43,63 @@ img {
 }
 
 .services-details {
-    font-size: 15.5px;
-    margin-top: 30px;
-    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 15px;
 }
 
 .services-box {
-    width: 300px; /* Adjusted width for better fit */
-    min-height: 300px; /* Ensure minimum height */
+    width: 300px; 
+    min-height: 300px; 
     background-color: #787ebe;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     text-align: center;
     font-size: 14.9px;
-    transition: transform 0.6s, opacity 0.6s; /* Smooth transitions */
-    opacity: 0; /* Initially hidden */
-    transform: translateY(50px); /* Initial position */
+    transition: transform 0.6s, opacity 0.6s; 
+    opacity: 0; 
+    transform: translateY(50px); 
 }
 
 .services-box.show {
     opacity: 1;
-    transform: translateY(0); /* Move to final position */
+    transform: translateY(0); 
 }
 
 @media (max-width: 768px) {
     .services-wrapper {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center; /* Center align items horizontally */
-        padding: 10px;
-        height: auto;
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding: 10px; 
+        overflow-x: auto; 
+        gap: 10px; 
+        height: 440px;
     }
 
     .services-box {
-        width: calc(100% - 20px); /* Full width minus margin */
-        height: auto; /* Auto height */
-        margin: 10px; 
-        font-size: 10px !important;
+        flex: 0 0 auto; 
+        width: 245px; 
+        height: auto; 
+        margin: 0 auto; 
+        padding: 10px; 
+        box-sizing: border-box; 
+        font-size: 11px !important;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        
     }
 
     .services-text {
         font-size: 16px !important;
-        padding-top: 25px;
+        padding-top: 45px;
         margin: 0;
+        text-align: center;
     }
 
     .services-header {
@@ -99,13 +110,13 @@ img {
 
     .services-details {
         font-size: 12px !important;
-        margin-top: 5px;
-        text-align: center;
-        width: 100%; /* Ensures the details are uniformly aligned */
+        margin-top: 2px;
+        text-align: left;
+        width: 100%;
     }
 
     img {
-        width: 17px; 
+        width: 17px;
         height: auto;
         margin-bottom: 10px;
     }

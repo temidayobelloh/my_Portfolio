@@ -26,7 +26,7 @@ const Services = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger scroll event on mount to show elements already in view
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);

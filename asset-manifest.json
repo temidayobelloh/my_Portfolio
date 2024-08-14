@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my_Portfolio/static/css/main.674e5059.css",
+    "main.css": "/my_Portfolio/static/css/main.08ae9b10.css",
     "main.js": "/my_Portfolio/static/js/main.a02c8593.js",
     "static/js/453.acca0757.chunk.js": "/my_Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.svg": "/my_Portfolio/static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.dee6ebaedc3499889734f6f0b7cb2e84.svg",
@@ -15,12 +15,12 @@
     "static/media/code-block.svg": "/my_Portfolio/static/media/code-block.07ba3b0e4664543912f2af1555730902.svg",
     "static/media/email-logo.svg": "/my_Portfolio/static/media/email-logo.24b8696346b3e2627b25f44e024e09e0.svg",
     "static/media/responsive-logo.svg": "/my_Portfolio/static/media/responsive-logo.65c3e903dac20a00fe66d174425af96d.svg",
-    "main.674e5059.css.map": "/my_Portfolio/static/css/main.674e5059.css.map",
+    "main.08ae9b10.css.map": "/my_Portfolio/static/css/main.08ae9b10.css.map",
     "main.a02c8593.js.map": "/my_Portfolio/static/js/main.a02c8593.js.map",
     "453.acca0757.chunk.js.map": "/my_Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.674e5059.css",
+    "static/css/main.08ae9b10.css",
     "static/js/main.a02c8593.js"
   ]
 }

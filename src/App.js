@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from './Components/Home/home';
 import About from './Components/About/about';
 import Skills from './Components/MySkills/skills';
-import Services from './Components/Services/services';
 import Projects from './Components/Projects/projects';
 import Contact from './Components/Contact/contact';
 import Navbar from './Components/Navbar/navbar';
@@ -35,9 +34,8 @@ const App = () =>{
                 contactRef={contact}/>
             <div ref={home}><Home /></div>
             <div ref={about}><About /></div>
-            <div ref={services}><Services /></div>
-            <div ref={skills}><Skills /></div>
             <div ref={projects}><Projects/> </div>
+            <div ref={skills}><Skills /></div>
             <div ref={contact}><Contact /></div>
    <Footer/>
    </BrowserRouter>

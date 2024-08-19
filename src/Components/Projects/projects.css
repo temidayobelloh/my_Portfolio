@@ -1,74 +1,66 @@
-.project-wrapper {
-    max-width: 1440px;
-    height: 590px;
-    background-color: white;
-    color: white;
-    margin: 0;
-    padding: 85px;
-    display: flex;
-    align-items: center;
-    padding-top: 0px;
-}
-
-.project-header {
-    padding-top: 60px;
-    margin: 0;
-    text-align: center;
-    background-color: white;
-    color: #ff7f80;
+.project-header{
+    margin-left: 86px;
     font-weight: bold;
-    max-width: 1440px;
+    color: #ff7f80;
 }
+.project-box-container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px
+}
+.project-box{
+    display: flex;
+    border: 1px solid red;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+}
+.project-box-container{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    margin-left: 86px;
+    width: min-content;
+}
+.screenshot{
+    max-width: 100%;
+    height: auto;
 
-.project-card {
-    border-radius: 15px;
-    margin: 10px;
-    padding: 80px;
-    width: 810px;
-    height: 338px;
-    background-color: #787ebe;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
+}
+.project-details{
+    margin-left: 20px;
     font-size: 14px;
-    padding: 30px;
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Start slightly below */
-    transition: opacity 0.6s ease, transform 0.6s ease; /* Smooth transition */
+    line-height: 24px;
+}
+.project-btn{
+    border: 1px solid #ff7172;
+    background-color: #ff7f80;
+    color: white;
+    margin: 3px;
+    font-size: 16px;
+    border-radius: 5px ;
+    height: 40px;
+}
+.project-heading{
+    text-align: left;
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.project-intro{
+    margin-left: 10px;
+}
+.bigger-box {
+    width: 600px; 
+    height: 315px;
+    background-color: #787ebe;
+    padding: 10px; 
+    margin: 0; 
 }
 
-.project-card.show {
-    opacity: 1;
-    transform: translateY(0); /* Move to original position */
-}
-
-.project-card:hover {
-    cursor: pointer;
-    background-color: rgba(120, 126, 190, 0.5);
-}
-
-@media (max-width: 768px) {
-    .project-wrapper {
-        height: auto; 
-        padding: 20px; 
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .project-header {
-        font-size: 16px !important; 
-        padding-top: 15px; 
-        text-align: center; 
-        margin-bottom: 20px; 
-    }
-
-    .project-card {
-        width: 100%; 
-        height: auto; 
-        margin: 10px 0; 
-        padding: 20px;
-        box-sizing: border-box; 
-        font-size: 12px; 
-        border-radius: 10px;
-    }
+.smaller-box {
+    width: 450px;
+    height: 260px; 
+    border: 1px solid #787ebe;
+    margin: auto;
+    padding: 10px;
 }

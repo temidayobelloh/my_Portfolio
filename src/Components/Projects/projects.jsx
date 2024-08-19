@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './projects.css';
+import quiz from '../assets/quiz app screenshot.png';
 
 const Projects = () => {
   const cardRefs = useRef([]);
@@ -29,24 +30,23 @@ const Projects = () => {
   }, []);
 
   return (
-    <div id="project-section">
-      <h1 className='project-header'>My Projects</h1>
-      <div className='project-wrapper'>
-        <div className='project-card' ref={el => cardRefs.current[0] = el}>
-          <img alt='project-one-thumbnail' />
-          <p>Weather Application</p>
-          <p>I built a simple weather application using HTML, CSS, and JavaScript. <br></br> The app allows users to input a city name, click a "Get Weather" button to retrieve the current temperature and weather conditions. It also handles errors by displaying informative messages for invalid city names or failed requests. <br></br>Additionally, I applied basic styling to make the project appealing.</p>
+    <div>
+      <h3 className='project-header'>Somethings I have built..</h3>
+      <div className='project-box-container'>
+        
+        <div className='bigger-box'><img className='screenshot' src={quiz} alt="quiz_screenshot"/></div>
+        <div className='smaller-box'>
+        <div className='project-details'>
+        <h3 className='project-heading'>Quiz App</h3>
+        <button className='project-btn'>React</button>
+        <button className='project-btn'>Javascript</button>
+        <button className='project-btn'>CSS</button>
+        <button className='project-btn'>HTML</button>
+        <button className='project-btn'>Github logo</button>
+        <p className='project-intro'> A web app that demonstrates my proficiency in Javascript programming through interractive quizzes, scoring systems and a responsive user interface.</p>
         </div>
-        <div className='project-card' ref={el => cardRefs.current[1] = el}>
-          <img alt='project-two-thumbnail' />
-          <p>Project Two</p>
-          <p>Description of the project</p>
         </div>
-        <div className='project-card' ref={el => cardRefs.current[2] = el}>
-          <img alt='project-three-thumbnail' />
-          <p>Project Three</p>
-          <p>Description of the project</p>
-        </div>
+
       </div>
     </div>
   );

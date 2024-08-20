@@ -1,16 +1,22 @@
 import './skills.css';
+import weatherTrack from '../assets/WeatherTrack.png';
 
 const Skills = () => {
   return (
-    <div className='skills-wrapper'>
-    <div><h1 className='skills-text'>My skills</h1></div>
-    <div className='loader-wrapper'>
-    <div className='loader'><br></br> 75% <br></br>HTML & CSS</div>
-    <div className='loader'><br></br>50% <br></br> Javascript</div>
-    <div className='loader'><br></br>60%<br></br>React</div>
-    <div className='loader'><br></br>5%<br></br>TypeScript</div>
-    <div className='loader'><br></br>60%<br></br>GIT</div>
-    </div>
+    <div>
+      <div className='skills-container'>
+      <div className='small-box'><h3 className='project-heading-two'>WeatherTrack</h3>
+      <div className='skills-btn-wrapper'>
+      <button className='skills-btn'>React</button>
+      <button className='skills-btn'>Javascript</button>
+      <button className='skills-btn'>CSS</button>
+      </div>
+      <p className='project-details'>A weather app that lets users check the current temperature and weather conditions by entering a city name, with error handling and simple styling for a user-friendly experience.</p>
+      </div>
+      <div className='big-box'><img src={weatherTrack} alt='weather-app'/></div>
+      
+      </div>
+    
     </div>
   )
 }

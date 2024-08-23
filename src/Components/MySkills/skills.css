@@ -53,3 +53,50 @@
     text-decoration: underline;
     text-align: left;
 }
+@media (max-width: 768px) {
+    .skills-container {
+        display: flex;
+        flex-direction: column; /* Stack boxes vertically */
+        align-items: center; /* Center the elements horizontally */
+        margin: 20px auto; /* Remove excessive left margin and center */
+        width: 100%; /* Full width to fit smaller screens */
+        height: auto; /* Adjust the height automatically */
+    }
+
+    .small-box, .big-box {
+        width: 90%; /* Make the boxes responsive */
+        height: auto; /* Auto height for proportional scaling */
+        margin: 15px 0; /* Add some space between boxes */
+        padding: 15px; /* Reduce padding slightly */
+    }
+
+    .big-box img {
+        width: 100%; /* Make the image scale to fit */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .skills-btn {
+        font-size: 14px;
+        height: 35px;
+        padding: 5px 10px;
+        margin: 5px; /* Center the buttons */
+        display: inline; /* Ensure buttons align properly */
+        text-align: left;
+    }
+
+    .skills-btn-wrapper {
+        margin-left: 0; /* Center the button wrapper */
+        text-align: left; /* Ensure buttons are centered */
+    }
+
+    .screenshot-weather {
+        width: 100%; /* Full width to fit the screen */
+        height: auto; /* Keep the aspect ratio */
+    }
+
+    .project-heading-two {
+        text-align: left; /* Center the heading */
+        font-size: 18px;
+        margin: 20px 0; /* Add some spacing */
+    }
+}

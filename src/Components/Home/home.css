@@ -122,91 +122,59 @@
       margin-top: 98px;
   }
   
-  /* Responsive styling */
   @media (max-width: 768px) {
-      .homePage-wrapper {
-          height: auto;
-          padding: 10px 10px;
-          align-items: center;
-      }
-      .home-logo {
-          width: 200px;
-          height: auto;
-          margin: 10px 0; 
-      }
-      .homePage-text {
-          width: 100%;
-          text-align: center;
-          margin-bottom: 20px;
-          margin-left: 0; 
-      }
-      .homePage-text-one {
-          margin-top: 10px;
-          font-size: 20px !important;
-          margin-left: 10px !important;
-      }
-      .text-name {
-          font-size: 20px !important;
-      }
-      .homePage-text-two {
-          max-width: 370px;
-          height: auto;
-          text-align: left;
-          font-size: 12px !important;
-          margin-left: 50px !important; 
-      }
-      .homePage-button, .viewProject-button {
-          max-width: 100%;
-          margin-right: 2px;
-          margin-bottom: 10px;
-          height: 48px;
-          margin-left: 40px;
-          font-size: 14px !important;
-          margin-top: 0px;
-      }
-  }
-  
-  @media (max-width: 390px) {
-      .homePage-wrapper {
-          align-items: center; 
-          padding: 0px; 
-      }
-  
-      .home-logo {
-          display: none;
-      }
-  
-      .homePage-text {
-          width: 100%;
-          text-align: left; 
-          margin-bottom: 20px; 
-          padding: 0; 
-          margin-left: 0px !important;
-      }
-  
-      .homePage-text-one {
-          margin-top: 10px; 
-          font-size: 12px !important;
-          margin-left: 10px !important;
-      }
-  
-      .text-name {
-          font-size: 13px !important; 
-          margin: 0; 
-      }
-  
-      .homePage-text-two {
-          text-align: left;
-          font-size: 10px !important; 
-          margin-left: 10px !important;
-      }
-  
-      .homePage-button, .viewProject-button {
-          height: 50px; 
-          font-size: 12px !important;
-          margin: 8px 0; 
-          padding: 5px 5px;
-          box-sizing: border-box; 
-      }
-  }
-  
+    .homePage-wrapper {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        flex-direction: row; 
+    
+    }
+
+    .home-logo {
+        width: 180px; 
+        height: auto;
+        margin-right:40px;
+        margin-bottom: 120px;
+    }
+
+    .homePage-text {
+        width: 60%; 
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .homePage-text-one {
+        margin-top: 0px;
+        font-size: 22px !important;
+    }
+
+    .text-name {
+        margin-top: 0;
+        font-size: 22px !important;
+    }
+
+    .homePage-text-two {
+        width: 100%;
+        font-size: 14px !important;
+        line-height: 24px;
+        margin-top: 0;
+    }
+
+    .homePage-button, .viewProject-button {
+        max-width: 140px;
+        margin-right: 15px;
+        height: 45px;
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+
+    .button-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+}

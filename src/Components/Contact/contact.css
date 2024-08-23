@@ -114,38 +114,106 @@ textarea {
     transform: scale(1.02);
 }
 
-/* Responsive Adjustments for screens below 768px */
 @media (max-width: 768px) {
+    .contact-info-wrapper {
+        background-color: #787ebe;
+        color: white;
+        padding: 20px;
+        width: 100%;
+        height: 600px; 
+    }
+
+    .contact-header {
+        font-size: 20px;
+        margin-left: 0;
+        padding: 15px ; 
+        text-align: center; 
+    }
+
+    .contact-intro {
+        width: 90%; 
+        max-width: 550px;
+        text-align: left; 
+        font-size: 14px;
+        margin-left: 0; 
+        padding: 10px;
+        line-height: 1.6;
+    }
+
+    .contact-details-wrapper {
+        width: 90%; 
+        max-width: 500px;
+        margin-left: 10px; 
+        text-align: center; 
+        margin-right: 0px;
+    
+    }
+
     .form-content {
-        max-width: 80%; /* Adjusted width for tablets */
-        padding: 15px;
-        margin-left: 0; /* Centered form on smaller screens */
+        font-size: 12px !important;
+        width: 100%; 
+        max-width: 350px; 
+        margin-right: 0px;
+        padding: 18px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        background-color: #fafafa;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .form-content.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 13px;
+        color: #333;
+        font-weight: 500;
+        text-align: left;
     }
 
     input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f7f7f7;
         font-size: 14px;
+        color: #333;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #ffa7a6;
+        background-color: white;
+    }
+
+    textarea {
+        resize: none; 
     }
 
     #contact-button {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
-
-/* Responsive Adjustments for screens below 390px */
-@media (max-width: 390px) {
-    .form-content {
-        width: 95%; /* Fills most of the screen width */
-        padding: 10px;
-    }
-
-    input, textarea {
-        padding: 8px;
-        font-size: 13px;
+        width: 100%; 
+        padding: 12px;
+        background-color: #ffa7a6;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    #contact-button {
-        font-size: 13px;
-        padding: 10px;
+    #contact-button:hover {
+        background-color: #ff6b6b;
+        transform: scale(1.02); 
     }
 }

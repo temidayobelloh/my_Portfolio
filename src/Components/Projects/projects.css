@@ -69,3 +69,70 @@
     margin-left: 0;
     transform: scale(1.0); 
 }
+@media (max-width: 768px) {
+    .project-header {
+        margin-left: 20px;
+        margin-top: 30px;
+        font-size: 18px;
+        text-align: center; /* Center the text on smaller screens */
+        padding: 10px;
+    }
+
+    .project-box-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 20px 0;
+        margin-left: 0; /* Remove excessive left margin */
+        width: 100%; /* Full width to fit smaller screens */
+    }
+
+    .screenshot {
+        width: 100%; /* Make the screenshot scale to full width */
+        max-width: 100%; 
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .project-details {
+        font-size: 13px;
+        line-height: 22px;
+        margin-left: 0; 
+        text-align: left; 
+        padding: 10px;
+    }
+    #github_btn{
+        margin-bottom: 0;
+    }
+
+    .project-btn {
+        font-size: 14px;
+        height: 35px;
+        padding: 5px 10px;
+        margin: 5px; /* Center the buttons */
+        display: inline-block; /* Ensure buttons are in a row */
+        text-align: center;
+    }
+
+    .bigger-box {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 90%; /* Restrict the width */
+        height: auto;
+        padding: 15px;
+    }
+
+    .smaller-box {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .github_logo {
+        width: 25px;
+        height: auto;
+        margin: 10px auto;
+        transform: scale(0.8);
+        display: inline;
+    }
+}

@@ -2,7 +2,9 @@
     margin-left: 86px;
     font-weight: bold;
     color: #ff7f80;
-    margin-top: 80px;
+    margin-top: 50px;
+    text-align: left;
+    padding: 10px;
 }
 .project-box-container{
     display: flex;
@@ -63,5 +65,7 @@
     width: 50px;
     height: 18px;
     margin-bottom: 0;
+    padding: 0;
+    margin-left: 0;
     transform: scale(1.0); 
 }

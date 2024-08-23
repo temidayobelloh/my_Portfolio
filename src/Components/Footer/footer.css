@@ -133,8 +133,8 @@
         padding: 10px;
         margin-top: 10px;
         font-size: 14px;
-        background-color: #ff9899;
-        color: rgb(51, 49, 49);
+        background-color: #ffa7a6;
+        color: white;
         border-radius: 9px;
         border: none;
         box-shadow: 0 4px 8px rgba(255, 152, 153, 0.6);
@@ -142,9 +142,8 @@
 
     .exit-Btn:hover {
         cursor: pointer;
-        color: black;
+        color: white;
     }
-
     .logo {
         width: 15px;
         margin-top: 10px;

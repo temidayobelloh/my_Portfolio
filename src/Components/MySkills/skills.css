@@ -34,6 +34,10 @@
     height: 40px;
     text-align: center;
 }
+.skills-btn:hover{
+    cursor: pointer;
+    background-color: #858cd4;
+}
 .skills-btn-wrapper{
     margin-left: 10px;
 }

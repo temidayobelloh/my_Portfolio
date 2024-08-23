@@ -1,8 +1,4 @@
 
-.sticky{
-    top:0;
-    z-index: 1000;
-}
 .portfolio-logo{
   margin-left: 85.33px;
   width: 30px;
@@ -23,6 +19,7 @@
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
+      margin: auto;
   }
   .navbar-logo{
     width: 89px;
@@ -49,7 +46,8 @@
   .navbar-list > li{
     color: white;
     list-style: none;
-    margin-right: 55px;
+    margin: 0px 32px;
+    margin-right: 50px;
   }
   .navbar-list-item :active{
     color: #ff98a2;

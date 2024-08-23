@@ -17,6 +17,9 @@
     font-size: 30px;
     text-align: center;
 }
+.contact-details-wrapper{
+    margin: 0 auto;
+}
 
 .contact-intro {
     margin-left: 85.33px;
@@ -30,13 +33,16 @@
 .break {
     margin-top: 15px;
 }
+.contact-container{
+    margin:auto;
+    margin-bottom: 900px;
+}
 
-/* Form Styling */
 .form-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 550px; /* Keeps the form compact on large screens */
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
     margin-top: 50px;
@@ -100,7 +106,9 @@ textarea {
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
+.contact-details-wrapper{
+    text-indent: 40px;
+}
 #contact-button:hover {
     background-color: #ff6b6b;
     transform: scale(1.02);

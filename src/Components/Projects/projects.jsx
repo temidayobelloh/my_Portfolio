@@ -30,9 +30,13 @@ const Projects = () => {
     };
   }, []);
 
+  function redirectToLink(){
+    window.open("https://github.com/temidayobelloh/QuizApplication.git", "_blank");
+  }
+
   return (
-    <div>
-      <h3 className='project-header'>Somethings I have built..</h3>
+    <div id="project-section">
+      <h2 className='project-header'>Projects I have built..</h2>
       <div className='project-box-container'>
         <div className='bigger-box'><img className='screenshot' src={quiz} alt="quiz_screenshot"/></div>
         <div className='smaller-box'>
@@ -41,7 +45,7 @@ const Projects = () => {
         <button className='project-btn'>Javascript</button>
         <button className='project-btn'>CSS</button>
         <button className='project-btn'>HTML</button>
-        <button className='project-btn'><img  className='github_logo' src={github} alt ='github'/></button>
+        <button onClick={redirectToLink} className='project-btn' id= "github_btn" ><img  className='github_logo' src={github} alt ='github'/></button>
         <p className='project-intro'> A web app that demonstrates my proficiency in Javascript programming through interractive quizzes, scoring systems and a responsive user interface.</p>
         </div>
         </div>

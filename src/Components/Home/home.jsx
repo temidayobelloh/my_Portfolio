@@ -4,12 +4,12 @@ import DownloadcvButton from '../DownloadCVButton/downloadcvButton';
 import homeLogo from '../assets/desktop-video-chat-coffee-by-oblik-studio.svg';
 
 const Home = () => {
-  // Create refs for the elements you want to observe
+
   const homeTextRef = useRef(null);
   const homeLogoRef = useRef(null);
   const buttonWrapperRef = useRef(null);
 
-  // Scroll to the projects section when the "View Projects" button is clicked
+  
   const viewProject = () => {
     const viewProjectSection = document.getElementById('project-section');
     if (viewProjectSection) {
@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    // Store the current values of refs in local variables
+
     const homeTextElement = homeTextRef.current;
     const homeLogoElement = homeLogoRef.current;
     const buttonWrapperElement = buttonWrapperRef.current;
@@ -36,7 +36,7 @@ const Home = () => {
       { threshold: 0.1 }
     );
 
-    // Observe the elements
+  
     if (homeTextElement) observer.observe(homeTextElement);
     if (homeLogoElement) observer.observe(homeLogoElement);
     if (buttonWrapperElement) observer.observe(buttonWrapperElement);

@@ -1,8 +1,38 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './contact.css';
 import arrow from '../assets/arrow-right.svg';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  })
+
+  const handleChange =(e)=>{
+
+    setFormData({...formData, [e.target.name]: e.target.value });
+
+  };
+
+  const handleSubmit =(e)=>{
+    e.preventDefault(); // note that this prevents default form submission
+    fetch ('/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type' : 'application/json',
+      },
+      body : JSON.Stringify (formData),
+    })
+    .then(response => response.text())
+    .then(data => {
+      console.log ('success', data );
+    })
+    .catch ((error)=>{
+      console.error ('Error', error);
+    });
+  };
   const formRef = useRef(null);
 
   useEffect(() => {
@@ -20,7 +50,7 @@ const Contact = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger scroll event on mount to show elements already in view
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -39,16 +69,16 @@ const Contact = () => {
         </div>
       </div>
       <div className='contact-container'>
-        <form className='form-content' ref={formRef}>
+        <form onSubmit={handleSubmit} className='form-content' ref={formRef}>
           <label htmlFor='name'>Name</label>
-          <input type='text' id="name" name="name" placeholder='Name' />
+          <input type='text' id="name" name="name" placeholder='Name' value={formData.name} onChange={handleChange} required/>
           <label htmlFor='email'>Email</label>
-          <input type='email' id="email" name="email" placeholder='Email' />
+          <input type='email' id="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} required/>
           <label htmlFor='subject'>Subject</label>
-          <input type='text' id="subject" name="subject" placeholder='Subject' />
+          <input type='text' id="subject" name="subject" placeholder='Subject' value={formData.subject} onChange={handleChange} required />
           <label htmlFor='message'>Message</label>
-          <textarea id="textarea" name="textarea" placeholder="Enter your text here..." rows="4" cols="50"></textarea>
-          <button id='contact-button'>Submit</button>
+          <textarea id="textarea" name="message" placeholder="Enter your text here..." rows="4" cols="50" value={formData.message} onChange={handleChange} required ></textarea>
+          <button id='contact-button'type="submit">Submit</button>
         </form>
       </div>
     </div>

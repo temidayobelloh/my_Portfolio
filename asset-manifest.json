@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/my_Portfolio/static/css/main.f99e2dc3.css",
+    "main.css": "/my_Portfolio/static/css/main.737d4d1f.css",
     "main.js": "/my_Portfolio/static/js/main.7aba6d35.js",
     "static/js/453.acca0757.chunk.js": "/my_Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/WeatherTrack.png": "/my_Portfolio/static/media/WeatherTrack.f8a012dd071412c647ec.png",
@@ -15,12 +15,12 @@
     "static/media/location-logo.svg": "/my_Portfolio/static/media/location-logo.13fcaabbc1005006c9912fbb471864ca.svg",
     "static/media/dev_mode_tv.svg": "/my_Portfolio/static/media/dev_mode_tv.06c34ccc955546678dbf995af3dcddab.svg",
     "static/media/email-logo.svg": "/my_Portfolio/static/media/email-logo.24b8696346b3e2627b25f44e024e09e0.svg",
-    "main.f99e2dc3.css.map": "/my_Portfolio/static/css/main.f99e2dc3.css.map",
+    "main.737d4d1f.css.map": "/my_Portfolio/static/css/main.737d4d1f.css.map",
     "main.7aba6d35.js.map": "/my_Portfolio/static/js/main.7aba6d35.js.map",
     "453.acca0757.chunk.js.map": "/my_Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f99e2dc3.css",
+    "static/css/main.737d4d1f.css",
     "static/js/main.7aba6d35.js"
   ]
 }

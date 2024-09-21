@@ -1,92 +1,147 @@
-
-.portfolio-logo{
+.portfolio-logo {
   margin-left: 85.33px;
   width: 30px;
   transition: transform 0.3s;
 }
-.portfolio-logo:hover{
+
+.portfolio-logo:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
-.navbar-wrapper{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0;
-      max-width: 1440px;
-      height:45px;
-      background-color: #787ebe;
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
-      margin: auto;
-  }
-  .navbar-logo{
-    width: 89px;
-    height: 24px;
-    font-size: 17px;
-    margin-left: 85.33px;
-  }
-  .navbar-logo:hover{
-    cursor: pointer;
-  }
-  .active-link{
-    color: white;
-    margin-right: 15px;
-  }
-  .navlink{
-    color: white;
-    text-decoration: none;
-  }
-  .navbar-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar-list > li{
-    color: white;
-    list-style: none;
-    margin: 0px 32px;
-    margin-right: 50px;
-  }
-  .navbar-list-item :active{
-    color: #ff98a2;
-  }
-  .navbar-list-item:hover{
-    cursor: pointer;
-    color:#ff98a2;
-    border-bottom: 2px solid #ff98a2;
-  }
-  
-  @media (max-width: 768px) {
-    .navbar-wrapper {
-        padding: 0 15 px; 
-        height: 40px; 
-    
-      }
 
-    .portfolio-logo {
-        margin-left: 80px; 
-        width: 25px;
-        margin-top: 13px;
-    }
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  max-width: 1440px !important;
+  width: 100%;
+  height: 45px;
+  background-color: #787ebe;
+  box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
+  margin: 0 auto;
+}
 
-    .navbar-logo {
-        margin-left: 15px; 
-        width: 60px; 
-        height: auto; 
-    }
+.navbar-logo {
+  width: 89px;
+  height: 24px;
+  font-size: 17px;
+  margin-left: 2%;
+}
 
-    .navbar-list > li {
-        margin-right: 20px; 
-        font-size: 12px; 
-    }
+.navbar-logo:hover {
+  cursor: pointer;
+}
 
-    .navbar-list-item:hover {
-        border-bottom-width: 1px; 
-    }
+.active-link {
+  color: white;
+  margin-right: 15px;
+}
 
-    .navbar-list {
-        justify-content: flex-end;
-    }
+.navlink {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-list > li {
+  color: white;
+  list-style: none;
+  margin: 0px 32px;
+  margin-right: 50px;
+}
+
+.navbar-list-item:active {
+  color: #ff98a2;
+}
+
+.navbar-list-item:hover {
+  cursor: pointer;
+  color: #ff98a2;
+  border-bottom: 2px solid #ff98a2;
+}
+
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    padding: 0 15px;
+    height: 40px;
+    max-width: 768px;
+  }
+
+  .portfolio-logo {
+    margin-left: 80px;
+    width: 25px;
+    margin-top: 13px;
+  }
+
+  .navbar-logo {
+    margin-left: 15px;
+    width: 60px;
+    height: auto;
+  }
+
+  .navbar-list > li {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  .navbar-list-item:hover {
+    border-bottom-width: 1px;
+  }
+
+  .navbar-list {
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on small screens */
+  }
+
+  .navbar-list {
+    display: none; /* Hide by default */
+  }
+
+  .navbar-list.active {
+    display: flex; /* Show menu when active */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position dropdown */
+    top: 45px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    background-color: #787ebe; /* Match navbar background */
+    z-index: 1000;
+    padding: 10px 0; /* Add padding */
+  }
+
+  .navbar-list > li {
+    margin: 10px 0; /* Space between items */
+    text-align: center; /* Center the text */
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar-list.active {
+    max-height: 300px; /* Limit height */
+  }
 }

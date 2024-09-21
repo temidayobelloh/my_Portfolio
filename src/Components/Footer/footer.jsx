@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './footer.css';
 import email from '../assets/email-logo.svg';
-import location from '../assets/location-logo.svg';
 import linkedin from '../assets/icons8-linkedin.svg';
 import github from '../assets/icons8-github.svg';
 
@@ -46,12 +45,8 @@ const Footer = () => {
           <a href="mailto:temidayobelloh@gmail.com">temidayobelloh@gmail.com</a>
         </p>
         <p className='contact-item'>
-          <img className="logo" src={location} alt="location" /> 
-          Lagos, Nigeria
-        </p>
-        <p className='contact-item'>
           <img className="logo" src={linkedin} alt="linkedin" /> 
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Bello Temidayo Hajarah</a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Bello Temidayo </a>
         </p>
         <p className='contact-item'>
           <img className="logo" src={github} alt="github" /> 

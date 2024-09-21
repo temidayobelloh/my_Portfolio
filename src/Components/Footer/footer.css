@@ -149,3 +149,103 @@
         margin-top: 10px;
     }
 }
+@media (max-width: 390px) {
+    .footer-wrapper {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        padding: 10px 20px;
+        color: black;
+        text-align: center;
+        margin: 0;
+        border: none;
+        box-shadow: 0 2px 4px rgba(228, 232, 234, 0.8);
+        margin-top: 0;
+        opacity: 0; 
+        transform: translateY(20px); 
+        transition: opacity 0.6s ease, transform 0.6s ease; 
+    }
+
+    .footer-wrapper.show {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+
+    .footer-content {
+        margin: 0;
+        padding: 5px;
+        color: black;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .contact-me-header {
+        font-size: 14px;
+        padding: 2px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: bolder;
+    }
+
+    .contact-item {
+        font-size: 13px;
+        display: inline;
+        margin: 5px 4px;
+        color: #333;
+    }
+
+    .contact-item a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .contact-item a:hover {
+        text-decoration: underline;
+    }
+
+    .copyright-text {
+        font-size: 12px;
+        margin-top: 10px;
+        color: rgb(51, 49, 49);
+    }
+
+    .exit-Btn {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+        background-color: #ffa7a6;
+        color: white;
+        border-radius: 9px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(255, 152, 153, 0.6);
+    }
+
+    .exit-Btn:hover {
+        cursor: pointer;
+        color: white;
+    }
+
+    .logo {
+        width: 13px;
+        margin-top: 10px;
+    }
+
+    .back-to-top {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #787ebe;
+        color: black;
+        padding: 8px;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: none; 
+        font-size: 12px;
+    }
+
+    .back-to-top.show {
+        display: block; 
+    }
+}

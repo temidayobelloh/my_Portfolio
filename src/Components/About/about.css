@@ -95,3 +95,64 @@ span{
         font-size: 12px;
     }
 }
+@media (max-width: 390px) {
+    .about-me-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: center;
+        padding: 30px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto; 
+        box-sizing: border-box;
+        background-color: #787ebe;
+    }
+
+    
+    .about-me-text {
+        width: 100%;
+        font-size: 16px; 
+        text-align: center; 
+        margin: 15px 0;
+        padding: 0;
+        color: #ffa7a6;
+        font-weight: bold;
+    }
+
+    
+    .about-me-intro {
+        font-size: 12.5px; 
+        line-height: 24px; 
+        text-align: left; 
+        max-width: 100%; 
+        padding: 0;
+        color: white;
+        margin: 10px 0; 
+    }
+
+    
+    .indented {
+        font-size: 12.5px; 
+        line-height: 24px;
+        text-align: left; 
+        max-width: 100%;
+        padding: 0;
+        color: white;
+        margin: 10px 0; 
+    }
+
+    
+    .indented-color {
+        color: #ffa7a6;
+        font-style: italic;
+        transition: transform 0.3s;
+        display: inline-block;
+        font-size: 12.5px; 
+    }
+
+    
+    .about-me-logo {
+        display: none;
+    }
+}

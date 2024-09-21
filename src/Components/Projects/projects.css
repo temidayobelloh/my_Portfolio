@@ -74,21 +74,21 @@
         margin-left: 20px;
         margin-top: 30px;
         font-size: 18px;
-        text-align: center; /* Center the text on smaller screens */
+        text-align: center; 
         padding: 10px;
     }
 
     .project-box-container {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
         padding: 20px 0;
-        margin-left: 0; /* Remove excessive left margin */
-        width: 100%; /* Full width to fit smaller screens */
+        margin-left: 0; 
+        width: 100%; 
     }
 
     .screenshot {
-        width: 100%; /* Make the screenshot scale to full width */
+        width: 100%; 
         max-width: 100%; 
         height: auto;
         margin-bottom: 20px;
@@ -109,14 +109,14 @@
         font-size: 14px;
         height: 35px;
         padding: 5px 10px;
-        margin: 5px; /* Center the buttons */
-        display: inline-block; /* Ensure buttons are in a row */
+        margin: 5px; 
+        display: inline-block; 
         text-align: center;
     }
 
     .bigger-box {
-        width: 100%; /* Full width on smaller screens */
-        max-width: 90%; /* Restrict the width */
+        width: 100%; 
+        max-width: 90%; 
         height: auto;
         padding: 15px;
     }
@@ -132,6 +132,94 @@
         width: 25px;
         height: auto;
         margin: 10px auto;
+        transform: scale(0.8);
+        display: inline;
+    }
+}
+@media (max-width: 390px) {
+    .project-header {
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px;
+        color: #ff7f80;
+        font-weight: bold;
+    }
+
+    .project-box-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .screenshot {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .project-details {
+        font-size: 12px;
+        line-height: 20px;
+        margin-left: 0;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .project-btn {
+        font-size: 12px;
+        height: 30px;
+        padding: 5px 8px;
+        margin: 4px;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #787ebe;
+        background-color: #787ebe;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .project-btn:hover {
+        cursor: pointer;
+        background-color: #858cd4;
+    }
+
+    .project-heading {
+        text-align: left;
+        font-size: 17px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .project-intro {
+        margin-left: 5px;
+    }
+
+    .bigger-box {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        padding: 12px;
+        background-color: #787ebe;
+    }
+
+    .smaller-box {
+        width: 90%;
+        height: auto;
+        padding: 12px;
+        margin: 8px auto;
+        border: 1px solid #787ebe;
+    }
+
+    .github_logo {
+        width: 20px;
+        height: auto;
+        margin: 8px auto;
         transform: scale(0.8);
         display: inline;
     }

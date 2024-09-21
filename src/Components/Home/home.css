@@ -178,3 +178,71 @@
         flex-wrap: nowrap;
     }
 }
+@media (max-width: 390px) {
+    
+    .home-logo {
+        display: none;
+    }
+
+    
+    .homePage-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        height: auto; 
+        box-sizing: border-box;
+    }
+
+    /* Center and resize text content */
+    .homePage-text {
+        width: 90%; 
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .homePage-text-one {
+        margin-top: 60px; 
+        font-size: 15px !important; 
+        line-height: 20px;
+        margin-bottom: 10px; 
+        margin-left: 35px;
+    }
+
+    .text-name {
+        font-size: 16px !important; 
+        text-align: center;
+    }
+
+    .homePage-text-two {
+        width: 90%; 
+        font-size: 13px !important; 
+        line-height: 20px; 
+        margin: 0 auto; 
+        margin-bottom: 20px;
+        text-align: left; 
+    }
+
+    
+    .homePage-button, .viewProject-button {
+        width: 130px; 
+        padding: 8px;
+        height: 40px;
+        font-size: 12px !important;
+        margin-top: 10px;
+    }
+
+    
+    .button-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin: 0 auto; 
+        padding: 0;
+    }
+}

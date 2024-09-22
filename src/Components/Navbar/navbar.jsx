@@ -11,7 +11,7 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, projectsRef, contactRef })
 
   const handleMenuItemClick = (ref) => {
     scrollToSection(ref);
-    setIsOpen(false);  // Close the menu after clicking an item
+    setIsOpen(false);  
   };
 
   return (
@@ -30,7 +30,7 @@ const Navbar = ({ scrollToSection, homeRef, aboutRef, projectsRef, contactRef })
           About
         </li>
         <li onClick={() => handleMenuItemClick(projectsRef)} className='navbar-list-item'>
-          Project
+          Projects
         </li>
         <li onClick={() => handleMenuItemClick(contactRef)} className='navbar-list-item'>
           Connect

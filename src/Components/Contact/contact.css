@@ -69,7 +69,6 @@ label {
     text-align: left;
 }
 
-/* Input and Textarea Styling */
 input, textarea {
     width: 100%;
     padding: 10px;
@@ -272,6 +271,7 @@ textarea {
         background-color: #fafafa;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         font-size: 12px;
+        margin-bottom: 30px;
     }
 
     label {

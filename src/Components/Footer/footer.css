@@ -153,7 +153,7 @@
     .footer-wrapper {
         background-color: white;
         width: 100%;
-        height: auto;
+        height: auto; /* Ensure it adjusts to content */
         padding: 10px 20px;
         color: black;
         text-align: center;
@@ -161,14 +161,14 @@
         border: none;
         box-shadow: 0 2px 4px rgba(228, 232, 234, 0.8);
         margin-top: 0;
-        opacity: 0; 
-        transform: translateY(20px); 
-        transition: opacity 0.6s ease, transform 0.6s ease; 
+        opacity: 1; /* Set opacity to 1 */
+        transform: translateY(0); /* Ensure it's at its correct position */
+        transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
     .footer-wrapper.show {
-        opacity: 1;
-        transform: translateY(0); 
+        opacity: 1; /* Already visible */
+        transform: translateY(0); /* No translation needed */
     }
 
     .footer-content {

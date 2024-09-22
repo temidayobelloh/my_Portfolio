@@ -1,12 +1,9 @@
-.portfolio-logo {
-  margin-left: 85.33px;
-  width: 30px;
-  transition: transform 0.3s;
-}
-
-.portfolio-logo:hover {
-  cursor: pointer;
-  transform: scale(1.3);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .navbar-wrapper {
@@ -22,6 +19,17 @@
   margin: 0 auto;
 }
 
+.portfolio-logo {
+  margin-left: 85.33px;
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.portfolio-logo:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
 .navbar-logo {
   width: 89px;
   height: 24px;
@@ -31,16 +39,6 @@
 
 .navbar-logo:hover {
   cursor: pointer;
-}
-
-.active-link {
-  color: white;
-  margin-right: 15px;
-}
-
-.navlink {
-  color: white;
-  text-decoration: none;
 }
 
 .navbar-list {
@@ -56,10 +54,6 @@
   margin-right: 50px;
 }
 
-.navbar-list-item:active {
-  color: #ff98a2;
-}
-
 .navbar-list-item:hover {
   cursor: pointer;
   color: #ff98a2;
@@ -67,7 +61,7 @@
 }
 
 .hamburger {
-  display: none; /* Hidden on larger screens */
+  display: none; 
   flex-direction: column;
   cursor: pointer;
   margin-right: 20px;
@@ -115,33 +109,136 @@
   }
 
   .hamburger {
-    display: flex; /* Show hamburger on small screens */
+    display: flex;
   }
 
   .navbar-list {
-    display: none; /* Hide by default */
+    display: none;
   }
 
   .navbar-list.active {
-    display: flex; /* Show menu when active */
-    flex-direction: column; /* Stack items vertically */
-    position: absolute; /* Position dropdown */
-    top: 45px; /* Position below the navbar */
+    display: flex; 
+    flex-direction: column; 
+    position: absolute; 
+    top: 45px;
     left: 0;
     right: 0;
-    background-color: #787ebe; /* Match navbar background */
+    background-color: #787ebe; 
     z-index: 1000;
-    padding: 10px 0; /* Add padding */
+    padding: 10px 0;
   }
 
   .navbar-list > li {
-    margin: 10px 0; /* Space between items */
-    text-align: center; /* Center the text */
+    margin: 10px 0; 
+    text-align: center; 
   }
 }
 
 @media (max-width: 390px) {
-  .navbar-list.active {
-    max-height: 300px; /* Limit height */
+  .navbar-wrapper {
+    max-width: 390px;
+    padding: 0 10px; 
+    height: 50px;
+    background-color: #787ebe; 
+    justify-content: space-between; 
+    box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5); 
   }
+
+  .portfolio-logo {
+    margin-left: 40px; 
+    width: 20px; 
+    margin-top: 1px;
+  }
+
+  .navbar-logo {
+    margin-left: 10px; 
+    width: 55px; 
+    height: auto;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+
+  .navbar-list.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    right: 0;
+    background-color: #787ebe;
+    z-index: 1000;
+    padding: 10px 0;
+  }
+
+  .navbar-list > li {
+    margin-top: 0;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+  }
+
+  .navbar-list-item:hover {
+    color: #ff98a2;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 40px; 
+  }
+
+  .hamburger div {
+    width: 22px; 
+    height: 2px; 
+    background-color: white;
+    margin: 3px; 
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .navbar-list.active {
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-y: scroll;
+  }
+}
+
+/* Button Styles */
+.top-btn-position {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  font-size: 30px;
+  color: #ff9899;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  border-radius: 70%;
+  padding: 5px;
+}
+
+.top-btn-style {
+  height: 150px;
+  width: 150px;
+  border-radius: 70%;
+  border: 4px solid #333;
+  background-color: #ff9899;
+  color: #333;
+}
+
+.top-btn-style:hover {
+  cursor: pointer;
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
 }

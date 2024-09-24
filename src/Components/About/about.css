@@ -1,12 +1,18 @@
 .about-me-wrapper {
     background-color: #787ebe;
-    margin: 0 auto; /* Center the wrapper */
+    margin: 0 auto;
     padding: 0;
     border: none;
     display: flex;
     box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
-    max-width: 1440px; /* Limit width to 1440px */
+    max-width: 1440px;
     height: 590px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-me-wrapper:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 10px rgba(120, 126, 190, 0.7);
 }
 
 .about-me-text {
@@ -16,11 +22,18 @@
     margin-left: 270px;
     margin-top: 40px;
     font-weight: bold;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.about-me-text:hover {
+    opacity: 0.9;
+    transform: translateX(5px);
 }
 
 span {
     color: #ffa7a6;
     font-weight: bold;
+    transition: color 0.4s ease;
 }
 
 .about-me-logo {
@@ -30,6 +43,12 @@ span {
     margin-top: 100px;
     margin-right: 0;
     padding: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.about-me-logo:hover {
+    transform: rotate(5deg);
+    opacity: 0.9;
 }
 
 .about-me-intro {
@@ -42,6 +61,12 @@ span {
     height: 98px;
     text-indent: 50px;
     margin-top: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.about-me-intro:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
 }
 
 .indented {
@@ -54,26 +79,38 @@ span {
     font-size: 17px;
     text-align: left;
     margin-left: 85.33px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.indented:hover {
+    opacity: 0.9;
+    transform: translateY(-3px);
 }
 
 .indented-color {
     color: #ffa7a6;
     font-style: italic;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, color 0.4s ease;
     display: inline-block;
 }
 
 .indented-color:hover {
     transform: scale(1.4);
-    cursor: pointer;
+    color: #ff8787;
 }
 
 @media (max-width: 768px) {
     .about-me-wrapper {
         align-items: center;
         padding: 20px;
-        height: auto; /* Allow height to adjust */
+        height: auto;
         border-bottom: 10px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .about-me-wrapper:hover {
+        transform: scale(1.01);
+        box-shadow: 0 6px 10px rgba(120, 126, 190, 0.7);
     }
 
     .about-me-text {
@@ -82,29 +119,54 @@ span {
         margin-top: 1px;
         margin-bottom: 0;
         font-size: 16px;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .about-me-text:hover {
+        opacity: 0.9;
+        transform: translateX(5px);
     }
 
     .about-me-logo {
-        width: 250px; 
-        height: auto; 
-        margin: 20px auto; 
+        width: 250px;
+        height: auto;
+        margin: 20px auto;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .about-me-logo:hover {
+        transform: rotate(5deg);
+        opacity: 0.9;
     }
 
     .about-me-intro,
     .indented {
-        text-align: left; 
-        margin-left: 0; 
+        text-align: left;
+        margin-left: 0;
         max-width: 100%;
-        padding: 0 20px; 
+        padding: 0 20px;
         font-size: 13px;
-        margin-top: 0 !important; /* Corrected from 0pX */
+        margin-top: 0 !important;
         margin-bottom: 30px;
         line-height: 30px;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .about-me-intro:hover,
+    .indented:hover {
+        opacity: 0.9;
+        transform: translateY(-3px);
     }
 
     .indented-color {
-        text-align: left; 
+        text-align: left;
         font-size: 12px;
+        transition: transform 0.3s ease, color 0.4s ease;
+    }
+
+    .indented-color:hover {
+        transform: scale(1.4);
+        color: #ff8787;
     }
 }
 
@@ -112,55 +174,84 @@ span {
     .about-me-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: flex-start; 
+        align-items: flex-start;
         justify-content: center;
         padding: 30px;
         margin: 0 auto;
-        width: 100%; /* Allow full width */
-        height: auto; 
+        width: 100%;
+        height: auto;
         box-sizing: border-box;
         background-color: #787ebe;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .about-me-wrapper:hover {
+        transform: scale(1.01);
+        box-shadow: 0 6px 10px rgba(120, 126, 190, 0.7);
     }
 
     .about-me-text {
         width: 100%;
-        font-size: 16px; 
-        text-align: center; 
+        font-size: 16px;
+        text-align: center;
         margin: 15px 0;
         padding: 0;
         color: #ffa7a6;
         font-weight: bold;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .about-me-text:hover {
+        opacity: 0.9;
+        transform: translateX(5px);
     }
 
     .about-me-intro {
-        font-size: 12.5px; 
-        line-height: 24px; 
-        text-align: left; 
-        max-width: 100%; 
-        padding: 0;
-        color: white;
-        margin: 10px 0; 
-    }
-
-    .indented {
-        font-size: 12.5px; 
+        font-size: 12.5px;
         line-height: 24px;
-        text-align: left; 
+        text-align: left;
         max-width: 100%;
         padding: 0;
         color: white;
-        margin: 10px 0; 
+        margin: 10px 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .about-me-intro:hover {
+        opacity: 0.9;
+        transform: translateY(-3px);
+    }
+
+    .indented {
+        font-size: 12.5px;
+        line-height: 24px;
+        text-align: left;
+        max-width: 100%;
+        padding: 0;
+        color: white;
+        margin: 10px 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .indented:hover {
+        opacity: 0.9;
+        transform: translateY(-3px);
     }
 
     .indented-color {
         color: #ffa7a6;
         font-style: italic;
-        transition: transform 0.3s;
+        transition: transform 0.3s ease, color 0.4s ease;
         display: inline-block;
-        font-size: 12.5px; 
+        font-size: 12.5px;
+    }
+
+    .indented-color:hover {
+        transform: scale(1.4);
+        color: #ff8787;
     }
 
     .about-me-logo {
-        display: none; /* Hide the logo on very small screens */
+        display: none;
     }
 }

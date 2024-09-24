@@ -19,10 +19,9 @@ const Skills = () => {
       </div>
       <p className='project-details'>A weather app that lets users check the current temperature and weather conditions by entering a city name, with error handling and simple styling for a user-friendly experience.</p>
       </div>
-      <div className='big-box'><img src={weatherTrack} alt='weather-app'/></div>
-      
+      <div className='big-box'><img src={weatherTrack} alt='weather-app'/></div>      
       </div>
-    
+        
     </div>
   )
 }

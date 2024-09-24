@@ -8,18 +8,18 @@
       transform: translateY(0);
     }
   }
-  
+
   .fade-in-up {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.9s ease-out, transform 0.9s ease-out;
   }
-  
+
   .animate {
     opacity: 1;
     animation: fadeInUp 1s forwards;
   }
-  
+
   .homePage-wrapper {
       padding: 0;
       margin-top: 0;
@@ -29,13 +29,19 @@
       display: flex;
       justify-content: space-between;
   }
-  
+
   .text-name {
       color: #ff7f80;
       font-size: 30px;
       font-weight: bolder;
+      opacity: 0.9;
+      transition: opacity 0.4s ease-in-out;
   }
-  
+
+  .text-name:hover {
+      opacity: 1;
+  }
+
   .homePage-text {
       padding-top: 40px;
       margin-left: 85.33px;
@@ -43,8 +49,11 @@
       height: 320px;
       color: black;
       text-align: left;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease forwards;
   }
-  
+
   .homePage-text-one {
       margin-top: 80px;
       width: 500px;
@@ -53,16 +62,30 @@
       margin-bottom: 20px;
       font-size: 30px;
       font-weight: 400;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease forwards;
   }
-  
+
+  .homePage-text-one:hover {
+      transform: scale(1.02);
+  }
+
   .homePage-text-two {
       font-size: 19px;
       margin-top: 15px;
       margin-bottom: 30px;
       line-height: 30px;
       width: 550px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.2s ease forwards;
   }
-  
+
+  .homePage-text-two:hover {
+      transform: scale(1.02);
+  }
+
   .homePage-button {
       max-width: 150.67px;
       padding: 13px;
@@ -77,8 +100,17 @@
       border: 1px solid #ff7172;
       margin-right: 35px;
       transition: transform 0.3s;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
+
+  .homePage-button:hover {
+      cursor: pointer;
+      background-color: #ff9899;
+      font-weight: 500;
+      transform: scale(1.05);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
   .viewProject-button {
       max-width: 150.67px;
       padding: 10px;
@@ -93,35 +125,40 @@
       margin-right: 35px;
       transition: transform 0.3s;
       background-color: transparent;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
-  
+
   .viewProject-button:hover {
       cursor: pointer;
       background-color: transparent;
-      transform: scale(1.1);
+      transform: scale(1.05);
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
   }
-  
-  .button-wrapper {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      margin: 0;
-  }
-  
-  .homePage-button:hover {
-      cursor: pointer;
-      background-color: #ff9899;
-      font-weight: 500;
-      transform: scale(1.1);
-  }
-  
+
   .home-logo {
       width: 350px;
       height: 360px;
       margin-right: 140.33px;
       margin-top: 98px;
+      transition: transform 0.5s ease-in-out;
   }
-  
+
+  .home-logo:hover {
+      transform: rotate(5deg);
+  }
+
+  .button-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .button-wrapper:hover {
+      transform: translateY(-5px);
+  }
+
   @media (max-width: 768px) {
     .homePage-wrapper {
         height: auto;
@@ -129,8 +166,7 @@
         display: flex;
         justify-content: space-between; 
         align-items: center;
-        flex-direction: row; 
-    
+        flex-direction: row;
     }
 
     .home-logo {
@@ -178,13 +214,12 @@
         flex-wrap: nowrap;
     }
 }
+
 @media (max-width: 390px) {
-    
     .home-logo {
         display: none;
     }
 
-    
     .homePage-wrapper {
         display: flex;
         flex-direction: column;
@@ -196,7 +231,6 @@
         height: auto; 
         box-sizing: border-box;
     }
-
 
     .homePage-text {
         width: 90%; 
@@ -227,7 +261,6 @@
         text-align: left; 
     }
 
-    
     .homePage-button, .viewProject-button {
         width: 130px; 
         padding: 8px;
@@ -236,7 +269,6 @@
         margin-top: 10px;
     }
 
-    
     .button-wrapper {
         display: flex;
         justify-content: center;

@@ -2,13 +2,14 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './Components/Home/home';
 import About from './Components/About/about';
-import Skills from './Components/MySkills/skills';
-import Projects from './Components/Projects/projects';
+import Skills from './Components/WeatherTrack/skills';
+import Projects from './Components/QuizApplication/projects';
 import Contact from './Components/Contact/contact';
 import Navbar from './Components/Navbar/navbar';
 import Footer from './Components/Footer/footer';
 import {useRef} from 'react';
 import BackToTopButton from './Components/BackToTopButton/BackToTopButton';
+import DiscoverNg from './Components/DiscoverNG/discoverNg';
 
 const App = () =>{
     const home = useRef(null);
@@ -36,6 +37,7 @@ const App = () =>{
             <div ref={about}><About /></div>
             <div ref={projects}><Projects/> </div>
             <div ref={skills}><Skills /></div>
+            <div><DiscoverNg/></div>
             <div ref={contact}><Contact /></div>
    <Footer/>
    </BrowserRouter>

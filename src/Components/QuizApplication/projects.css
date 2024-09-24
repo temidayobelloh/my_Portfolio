@@ -1,124 +1,174 @@
-.project-header{
+.project-header {
     margin-left: 86px;
     font-weight: bold;
     color: #ff7f80;
     margin-top: 50px;
     text-align: left;
     padding: 10px;
+    transition: all 0.3s ease-in-out; 
 }
-.project-box-container{
+
+.project-box-container {
     display: flex;
-    padding-top: 30px;
+    padding-top: 1px;
     padding-bottom: 40px;
     margin-left: 86px;
     width: min-content;
+    transition: transform 0.3s ease;
 }
-.screenshot{
+
+.screenshot {
     width: 550px;
     height: auto;
     object-position: 10px;
+    transition: transform 0.3s ease-in-out; /* Added smooth scaling transition */
 }
-.project-details{
+
+.screenshot:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.project-details {
     margin-left: 20px;
     font-size: 14px;
     line-height: 24px;
+    transition: color 0.3s ease; /* Smooth transition for text color changes */
 }
-.project-btn{
+
+.project-btn {
     display: inline-block;
     border: 1px solid #787ebe;
     background-color: #787ebe;
     color: white;
     margin: 3px;
     font-size: 16px;
-    border-radius: 5px ;
+    border-radius: 5px;
     height: 40px;
     text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth background and transform transitions */
 }
+
 .project-btn:hover {
     cursor: pointer;
-    background-color: #858cd4 ;
-
+    background-color: #858cd4;
+    transform: translateY(-2px); /* Slight lift on hover */
 }
-.project-heading{
+
+.project-heading {
     text-align: left;
     font-size: 19px;
     text-decoration: underline;
     font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
 }
-.project-intro{
+
+.project-intro {
     margin-left: 10px;
+    transition: margin-left 0.3s ease; /* Smooth margin transition */
 }
+
 .bigger-box {
-    width: 600px; 
+    width: 600px;
     height: 315px;
     background-color: #787ebe;
-    padding: 19px; 
+    padding: 19px;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
+
+.bigger-box:hover {
+    transform: scale(1.02); /* Slight enlargement on hover */
+}
+
 .smaller-box {
     width: 450px;
-    height: 260px; 
+    height: 260px;
     border: 1px solid #787ebe;
     margin: auto;
     padding: 10px;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
 }
-.github_logo{
+
+.smaller-box:hover {
+    transform: scale(1.02); /* Slight enlargement on hover */
+}
+
+.github_logo {
     width: 50px;
     height: 18px;
     margin-bottom: 0;
     padding: 0;
     margin-left: 0;
-    transform: scale(1.0); 
+    transform: scale(1.0);
+    transition: transform 0.3s ease; /* Smooth scaling transition */
 }
+
+.github_logo:hover {
+    transform: scale(1.2); /* Slight enlargement on hover */
+}
+
+/* Responsive for 768px */
 @media (max-width: 768px) {
     .project-header {
         margin-left: 20px;
         margin-top: 30px;
         font-size: 18px;
-        text-align: center; 
+        text-align: center;
         padding: 10px;
+        transition: all 0.3s ease-in-out;
     }
 
     .project-box-container {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         padding: 20px 0;
-        margin-left: 0; 
-        width: 100%; 
+        margin-left: 0;
+        width: 100%;
+        transition: transform 0.3s ease;
     }
 
     .screenshot {
-        width: 100%; 
-        max-width: 100%; 
+        width: 100%;
+        max-width: 100%;
         height: auto;
         margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
     }
 
     .project-details {
         font-size: 13px;
         line-height: 22px;
-        margin-left: 0; 
-        text-align: left; 
+        margin-left: 0;
+        text-align: left;
         padding: 10px;
-    }
-    #github_btn{
-        margin-bottom: 0;
+        transition: color 0.3s ease;
     }
 
     .project-btn {
         font-size: 14px;
         height: 35px;
         padding: 5px 10px;
-        margin: 5px; 
-        display: inline-block; 
+        margin: 5px;
+        display: inline-block;
         text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-btn:hover {
+        background-color: #858cd4;
+        transform: translateY(-2px);
     }
 
     .bigger-box {
-        width: 100%; 
-        max-width: 90%; 
+        width: 100%;
+        max-width: 90%;
         height: auto;
         padding: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .bigger-box:hover {
+        transform: scale(1.02);
     }
 
     .smaller-box {
@@ -126,6 +176,11 @@
         height: auto;
         padding: 15px;
         margin: 10px auto;
+        transition: transform 0.3s ease;
+    }
+
+    .smaller-box:hover {
+        transform: scale(1.02);
     }
 
     .github_logo {
@@ -134,8 +189,15 @@
         margin: 10px auto;
         transform: scale(0.8);
         display: inline;
+        transition: transform 0.3s ease;
+    }
+
+    .github_logo:hover {
+        transform: scale(1.0);
     }
 }
+
+/* Responsive for 390px */
 @media (max-width: 390px) {
     .project-header {
         margin-left: 10px;
@@ -145,6 +207,7 @@
         padding: 8px;
         color: #ff7f80;
         font-weight: bold;
+        transition: all 0.3s ease-in-out;
     }
 
     .project-box-container {
@@ -154,6 +217,7 @@
         padding: 15px 0;
         margin-left: 0;
         width: 100%;
+        transition: transform 0.3s ease;
     }
 
     .screenshot {
@@ -161,6 +225,7 @@
         max-width: 100%;
         height: auto;
         margin-bottom: 15px;
+        transition: transform 0.3s ease-in-out;
     }
 
     .project-details {
@@ -169,6 +234,7 @@
         margin-left: 0;
         text-align: left;
         padding: 8px;
+        transition: color 0.3s ease;
     }
 
     .project-btn {
@@ -182,22 +248,12 @@
         background-color: #787ebe;
         color: white;
         border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .project-btn:hover {
-        cursor: pointer;
         background-color: #858cd4;
-    }
-
-    .project-heading {
-        text-align: left;
-        font-size: 17px;
-        text-decoration: underline;
-        font-weight: bold;
-    }
-
-    .project-intro {
-        margin-left: 5px;
+        transform: translateY(-2px);
     }
 
     .bigger-box {
@@ -206,6 +262,11 @@
         height: auto;
         padding: 12px;
         background-color: #787ebe;
+        transition: transform 0.3s ease;
+    }
+
+    .bigger-box:hover {
+        transform: scale(1.02);
     }
 
     .smaller-box {
@@ -214,6 +275,11 @@
         padding: 12px;
         margin: 8px auto;
         border: 1px solid #787ebe;
+        transition: transform 0.3s ease;
+    }
+
+    .smaller-box:hover {
+        transform: scale(1.02);
     }
 
     .github_logo {
@@ -222,5 +288,10 @@
         margin: 8px auto;
         transform: scale(0.8);
         display: inline;
+        transition: transform 0.3s ease;
+    }
+
+    .github_logo:hover {
+        transform: scale(1.0);
     }
 }

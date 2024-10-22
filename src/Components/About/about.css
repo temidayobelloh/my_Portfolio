@@ -1,7 +1,7 @@
 .about-me-wrapper {
     background-color: #787ebe;
     margin: 0 auto;
-    padding: 0;
+    padding: 20px;
     border: none;
     display: flex;
     box-shadow: 0 4px 6px rgba(120, 126, 190, 0.5);
@@ -19,7 +19,7 @@
     text-align: left;
     color: #ffa7a6;
     padding: 10px;
-    margin-left: 270px;
+    margin-left: 68px;
     margin-top: 40px;
     font-weight: bold;
     transition: opacity 0.4s ease, transform 0.4s ease;
@@ -38,11 +38,8 @@ span {
 
 .about-me-logo {
     max-width: 390px;
-    height: 360px;
-    margin-left: 150.33px;
-    margin-top: 100px;
-    margin-right: 0;
-    padding: 0;
+    height: auto;
+    margin: 30px auto;
     transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -53,14 +50,13 @@ span {
 
 .about-me-intro {
     text-align: left;
-    margin-left: 85.33px;
+    margin-left: 68px;
     color: white;
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 1.5;
     max-width: 610px;
-    height: 98px;
-    text-indent: 50px;
-    margin-top: 0;
+    height: auto;
+    text-indent: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
@@ -72,13 +68,13 @@ span {
 .indented {
     margin: 0;
     padding: 0;
-    text-indent: 50px;
+    text-indent: 0;
     color: white;
-    line-height: 38px;
+    line-height: 1.5;
     max-width: 610px;
-    font-size: 17px;
+    font-size: 18px;
     text-align: left;
-    margin-left: 85.33px;
+    margin-left: 68px;
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
@@ -101,157 +97,67 @@ span {
 
 @media (max-width: 768px) {
     .about-me-wrapper {
+        flex-direction: column;
         align-items: center;
         padding: 20px;
         height: auto;
-        border-bottom: 10px;
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .about-me-wrapper:hover {
-        transform: scale(1.01);
-        box-shadow: 0 6px 10px rgba(120, 126, 190, 0.7);
     }
 
     .about-me-text {
         text-align: center;
-        margin-left: 10px;
-        margin-top: 1px;
-        margin-bottom: 0;
-        font-size: 16px;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-
-    .about-me-text:hover {
-        opacity: 0.9;
-        transform: translateX(5px);
+        margin: 10px 0;
+        font-size: 20px;
+        margin-top: 20px;
     }
 
     .about-me-logo {
         width: 250px;
         height: auto;
-        margin: 20px auto;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    .about-me-logo:hover {
-        transform: rotate(5deg);
-        opacity: 0.9;
+        margin: 20px 0;
     }
 
     .about-me-intro,
     .indented {
-        text-align: left;
-        margin-left: 0;
-        max-width: 100%;
-        padding: 0 20px;
-        font-size: 13px;
-        margin-top: 0 !important;
-        margin-bottom: 30px;
-        line-height: 30px;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-
-    .about-me-intro:hover,
-    .indented:hover {
-        opacity: 0.9;
-        transform: translateY(-3px);
+        text-align: center;
+        max-width: 90%;
+        padding: 0 10px;
+        font-size: 14px;
+        margin: 10px 35px;
     }
 
     .indented-color {
-        text-align: left;
-        font-size: 12px;
-        transition: transform 0.3s ease, color 0.4s ease;
-    }
-
-    .indented-color:hover {
-        transform: scale(1.4);
-        color: #ff8787;
+        text-align: center;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 390px) {
     .about-me-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        padding: 30px;
-        margin: 0 auto;
+        padding: 25px;
         width: 100%;
-        height: auto;
         box-sizing: border-box;
-        background-color: #787ebe;
-        transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .about-me-wrapper:hover {
-        transform: scale(1.01);
-        box-shadow: 0 6px 10px rgba(120, 126, 190, 0.7);
+        height: auto;
     }
 
     .about-me-text {
         width: 100%;
         font-size: 16px;
-        text-align: center;
-        margin: 15px 0;
-        padding: 0;
-        color: #ffa7a6;
-        font-weight: bold;
-        transition: opacity 0.4s ease, transform 0.4s ease;
+        margin: 10px ;
     }
 
-    .about-me-text:hover {
-        opacity: 0.9;
-        transform: translateX(5px);
-    }
-
-    .about-me-intro {
-        font-size: 12.5px;
-        line-height: 24px;
-        text-align: left;
-        max-width: 100%;
-        padding: 0;
-        color: white;
-        margin: 10px 0;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-
-    .about-me-intro:hover {
-        opacity: 0.9;
-        transform: translateY(-3px);
-    }
-
+    .about-me-intro,
     .indented {
-        font-size: 12.5px;
-        line-height: 24px;
-        text-align: left;
-        max-width: 100%;
-        padding: 0;
-        color: white;
-        margin: 10px 0;
-        transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-
-    .indented:hover {
-        opacity: 0.9;
-        transform: translateY(-3px);
+        font-size: 12px;
+        margin: 5px 5px;
     }
 
     .indented-color {
-        color: #ffa7a6;
-        font-style: italic;
-        transition: transform 0.3s ease, color 0.4s ease;
-        display: inline-block;
-        font-size: 12.5px;
-    }
-
-    .indented-color:hover {
-        transform: scale(1.4);
-        color: #ff8787;
+        font-size: 12px;
     }
 
     .about-me-logo {
-        display: none;
+        max-width: 70%;
+        display: block;
+        margin: 20px 10px;
     }
 }

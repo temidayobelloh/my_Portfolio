@@ -7,41 +7,69 @@ import Projects from './Components/SpaceApp/projects';
 import Contact from './Components/Contact/contact';
 import Navbar from './Components/Navbar/navbar';
 import Footer from './Components/Footer/footer';
-import {useRef} from 'react';
+import { useRef } from 'react';
 import BackToTopButton from './Components/BackToTopButton/BackToTopButton';
 import DiscoverNg from './Components/DiscoverNG/discoverNg';
 
-const App = () =>{
-    const home = useRef(null);
-    const about = useRef(null);
-    const services = useRef(null);
-    const skills = useRef(null);
-    const projects = useRef(null);
-    const contact = useRef(null);
+const App = () => {
+  // Create refs for each section to enable smooth scrolling
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const servicesRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
 
-    const scrollToSection =(elementRef)=>{
-        window.scrollTo({ top: elementRef.current.offsetTop, 
-            behavior: 'smooth',})
-    };
-    return(
-   <BrowserRouter>
-   <BackToTopButton/>
-   <Navbar scrollToSection={scrollToSection}
-                homeRef={home}
-                aboutRef={about}
-                servicesRef={services}
-                skillsRef={skills}
-                projectsRef={projects}
-                contactRef={contact}/>
-            <div ref={home}><Home /></div>
-            <div ref={about}><About /></div>
-            <div ref={projects}><Projects/> </div>
-            <div ref={skills}><Skills /></div>
-            <div><DiscoverNg/></div>
-            <div ref={contact}><Contact /></div>
-   <Footer/>
-   </BrowserRouter>
-    )
-  
-}
+  // Scroll to the desired section smoothly when called
+  const scrollToSection = (elementRef) => {
+    if (elementRef.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  return (
+    <BrowserRouter>
+      {/* Back to Top Button */}
+      <BackToTopButton />
+
+      {/* Navbar with section refs passed as props */}
+      <Navbar
+        scrollToSection={scrollToSection}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        servicesRef={servicesRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
+
+      {/* Sections with their respective refs */}
+      <div ref={homeRef}>
+        <Home />
+      </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+      <div ref={skillsRef}>
+        <Skills />
+      </div>
+      <div>
+        <DiscoverNg />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </BrowserRouter>
+  );
+};
+
 export default App;

@@ -42,10 +42,12 @@ const Projects = () => {
         <div className='smaller-box'>
         <div className='project-details'>
         <h3 className='project-heading'>Space Tourism App</h3>
+        <div className='btn-wrapper'>
         <button className='project-btn'>Javascript</button>
         <button className='project-btn'>CSS</button>
         <button className='project-btn'>HTML</button>
         <button onClick={redirectToLink} className='project-btn' id= "github_btn" ><img  className='github_logo' src={github} alt ='github'/></button>
+        </div>
         <p className='project-intro'> A web app that demonstrates my proficiency in HTML, CSS and Javascript programming featuring interactive space exploration and stunning visuals to enhance the user experience. </p>
         </div>
         </div>

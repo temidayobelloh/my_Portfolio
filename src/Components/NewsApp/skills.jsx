@@ -12,6 +12,7 @@ const Skills = () => {
       <div className='skills-container'>
       <div className='small-box'><h3 className='project-heading-two'>NewsApp</h3>
       <div className='skills-btn-wrapper'>
+
       <button className='skills-btn'>HTML</button>
       <button className='skills-btn'>Javascript</button>
       <button className='skills-btn'>CSS</button>

@@ -14,9 +14,11 @@ const DiscoverNg = () => {
         <div className='smaller-box'>
         <div className='project-details'>
         <h3 className='project-heading'>Discover Ng</h3>
+        <div className='discover-wrapper'>
         <button className='project-btn'>React</button>
         <button className='project-btn'>CSS</button>
         <button onClick={redirectToLink} className='project-btn' id= "github_btn" ><img  className='github_logo' src={github} alt ='github'/></button>
+        </div>
         <p className='project-intro'>Discover NG is a React virtual tour app featuring an interactive map and a carousel with unique facts about Nigeria's tourist spots. It demonstrates my JavaScript skills and provides a responsive user experience.</p>
         </div>
         </div>

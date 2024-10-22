@@ -1,5 +1,5 @@
 import './discoverNg.css';
-import discoverNigeria from '../assets/discoverng screenshot.png'
+import discoverNigeria from '../assets/map.png'
 import github from '../assets/icons8-github (1).svg';
 
 function redirectToLink(){

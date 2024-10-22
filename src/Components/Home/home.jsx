@@ -59,8 +59,7 @@ const Home = () => {
           <p className='homePage-text-two'>
             A Frontend Developer, who loves turning ideas into reality through
             code. <br />
-            I am actively seeking entry-level positions to utilize my skills and
-            advance professionally.
+            Currently seeking opportunities to leverage skills and deliver high-quality solutions.
           </p>
           <div ref={buttonWrapperRef} className='button-wrapper'>
             <DownloadcvButton />

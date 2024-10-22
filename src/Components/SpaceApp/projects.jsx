@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './projects.css';
-import quiz from '../assets/quiz app screenshot.png';
+import spaceApp from '../assets/spaceApp.png';
 import github from '../assets/icons8-github (1).svg';
 
 const Projects = () => {
@@ -31,22 +31,22 @@ const Projects = () => {
   }, []);
 
   function redirectToLink(){
-    window.open("https://github.com/temidayobelloh/QuizApplication.git", "_blank");
+    window.open("https://github.com/temidayobelloh/Space-Tourism-App.git", "_blank");
   }
 
   return (
     <div id="project-section">
       <h2 className='project-header'>Projects I have built..</h2>
       <div className='project-box-container'>
-        <div className='bigger-box'><img className='screenshot' src={quiz} alt="quiz_screenshot"/></div>
+        <div className='bigger-box'><img className='screenshot' src={spaceApp} alt="space_app"/></div>
         <div className='smaller-box'>
         <div className='project-details'>
-        <h3 className='project-heading'>Quiz App</h3>
+        <h3 className='project-heading'>Space Tourism App</h3>
         <button className='project-btn'>Javascript</button>
         <button className='project-btn'>CSS</button>
         <button className='project-btn'>HTML</button>
         <button onClick={redirectToLink} className='project-btn' id= "github_btn" ><img  className='github_logo' src={github} alt ='github'/></button>
-        <p className='project-intro'> A web app that demonstrates my proficiency in Javascript programming through interractive quizzes, scoring systems and a responsive user interface.</p>
+        <p className='project-intro'> A web app that demonstrates my proficiency in HTML, CSS and Javascript programming featuring interactive space exploration and stunning visuals to enhance the user experience. </p>
         </div>
         </div>
       </div>

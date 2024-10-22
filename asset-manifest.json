@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/my_Portfolio/static/css/main.2e9e8413.css",
-    "main.js": "/my_Portfolio/static/js/main.f5ba1b78.js",
+    "main.css": "/my_Portfolio/static/css/main.64bdae43.css",
+    "main.js": "/my_Portfolio/static/js/main.9c8448e0.js",
     "static/js/453.acca0757.chunk.js": "/my_Portfolio/static/js/453.acca0757.chunk.js",
-    "static/media/discoverng screenshot.png": "/my_Portfolio/static/media/discoverng screenshot.8b4f9d51e6b98e92580c.png",
-    "static/media/WeatherTrack.png": "/my_Portfolio/static/media/WeatherTrack.f8a012dd071412c647ec.png",
-    "static/media/quiz app screenshot.png": "/my_Portfolio/static/media/quiz app screenshot.f03fff804c45db7102a0.png",
+    "static/media/spaceApp.png": "/my_Portfolio/static/media/spaceApp.c0f15623b2aa15dadbe4.png",
+    "static/media/map.png": "/my_Portfolio/static/media/map.7b6d24687a9772953859.png",
+    "static/media/Screenshot 2024-10-22 121122.png": "/my_Portfolio/static/media/Screenshot 2024-10-22 121122.b135c31749d9204250b2.png",
     "static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.svg": "/my_Portfolio/static/media/girl-sitting-on-books-with-laptop-by-oblik-studio.dee6ebaedc3499889734f6f0b7cb2e84.svg",
     "static/media/desktop-video-chat-coffee-by-oblik-studio.svg": "/my_Portfolio/static/media/desktop-video-chat-coffee-by-oblik-studio.4c6070b5779c6798fd658050b1c6347f.svg",
     "static/media/icons8-github (1).svg": "/my_Portfolio/static/media/icons8-github (1).fa78959ce126592076172c85a6d21660.svg",
@@ -15,12 +15,12 @@
     "static/media/arrow-right.svg": "/my_Portfolio/static/media/arrow-right.137d5d64ff1a29da8e227c418d4898ec.svg",
     "static/media/dev_mode_tv.svg": "/my_Portfolio/static/media/dev_mode_tv.06c34ccc955546678dbf995af3dcddab.svg",
     "static/media/email-logo.svg": "/my_Portfolio/static/media/email-logo.24b8696346b3e2627b25f44e024e09e0.svg",
-    "main.2e9e8413.css.map": "/my_Portfolio/static/css/main.2e9e8413.css.map",
-    "main.f5ba1b78.js.map": "/my_Portfolio/static/js/main.f5ba1b78.js.map",
+    "main.64bdae43.css.map": "/my_Portfolio/static/css/main.64bdae43.css.map",
+    "main.9c8448e0.js.map": "/my_Portfolio/static/js/main.9c8448e0.js.map",
     "453.acca0757.chunk.js.map": "/my_Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e9e8413.css",
-    "static/js/main.f5ba1b78.js"
+    "static/css/main.64bdae43.css",
+    "static/js/main.9c8448e0.js"
   ]
 }
